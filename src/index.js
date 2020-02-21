@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Counter from './components/counter'
-import BetButton from './components/betButton'
+// import BetButton from './components/betButton'
 
 export default function createApp() {
   const container = document.createElement('div')
@@ -11,7 +11,7 @@ export default function createApp() {
   ReactDOM.render(
     <div>
       <Counter />
-      <BetButton
+      {/* <BetButton
         optionId="3453"
         handicap="444"
         odds="67"
@@ -19,7 +19,7 @@ export default function createApp() {
         betHandicap="45"
         isDetail
         bettingSlipId="gkjhkd"
-      />
+      /> */}
     </div>,
     container
   )
