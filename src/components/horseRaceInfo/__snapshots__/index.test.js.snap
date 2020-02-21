@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`测试 horseRaceInfo ForeCastOrTriCast 1`] = `
+<div
+  class=" -horse-info"
+>
+  <div
+    class=" -horse-num"
+  >
+    wer
+  </div>
+  <div
+    class=" -horse-name"
+  >
+    wer
+  </div>
+</div>
+`;
+
+exports[`测试 horseRaceInfo HistoricalRecord 1`] = `
+<div
+  class="single-horse-historical-record"
+/>
+`;
+
+exports[`测试 horseRaceInfo HorseImg 1`] = `
+<img
+  alt=""
+  class="single-horse-img"
+  src="[object Object]"
+/>
+`;
+
+exports[`测试 horseRaceInfo HorseName 1`] = `
+<div
+  class="-horse-name"
+/>
+`;
+
+exports[`测试 horseRaceInfo HorseNum 1`] = `
+<div
+  class="-horse-num"
+/>
+`;
+
+exports[`测试 horseRaceInfo HorseTrackNum 1`] = `
+<div
+  class="single1-horse-track-num"
+>
+  wer
+</div>
+`;
+
+exports[`测试 horseRaceInfo SingleHorseInfo 1`] = `
+<div
+  class="single-horse-info"
+>
+  <div
+    class="leftInfo"
+  >
+    <div
+      class="top"
+    >
+      <div
+        class="left"
+      >
+        <div
+          class="single-horse-num"
+        />
+        <div
+          class="single-horse-track-num"
+        />
+      </div>
+      <img
+        alt=""
+        class="single-horse-img"
+        src="[object Object]"
+      />
+    </div>
+    <div
+      class="single-horse-historical-record"
+    />
+  </div>
+  <div
+    class="rightInfo"
+  >
+    <div
+      class="single-horse-name"
+    />
+    <div
+      class="horseman"
+    >
+      <span />
+       
+      <span>
+        / 
+      </span>
+      <span />
+    </div>
+    <div>
+      <span
+        class="age"
+      >
+         
+      </span>
+      <span
+        class="weight"
+      >
+        100
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`测试 horseRaceInfo SingleSpInfo 1`] = `
+<div
+  class="default-sp-info"
+/>
+`;

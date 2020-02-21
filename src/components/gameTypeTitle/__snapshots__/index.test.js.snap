@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button组件 basic use 1`] = `
+<div
+  class="default-game-type-title"
+>
+  <div
+    class="items"
+  >
+    <img
+      alt="01"
+      class="img"
+      src="[object Object]"
+    />
+    <span
+      class="typeText activeTypeText"
+    >
+      Soccer (22)
+    </span>
+  </div>
+  <div
+    class="items"
+  >
+    <img
+      alt="02"
+      class="img"
+      src="[object Object]"
+    />
+    <span
+      class="typeText"
+    >
+      Basketball (22)
+    </span>
+  </div>
+</div>
+`;

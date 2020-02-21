@@ -1,0 +1,22 @@
+.s02-detail-top {
+  position: relative;
+  height: 416px;
+  width: 100%;
+  background-image: url('../../assets/basketball-bg-s02.png');
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap column;
+  // padding-top: @nav-bar-height;
+}
+.s02-footerball-detail-top {
+  &:extend(.s02-detail-top);
+  background-image: url('../../assets/footerball-bg-s02.png');
+}
+.s02-tennis-detail-top {
+  &:extend(.s02-detail-top);
+  height: 346px;
+  background-image: url('../../assets/bg-tennis-court.png');
+  background-size: contain;
+}

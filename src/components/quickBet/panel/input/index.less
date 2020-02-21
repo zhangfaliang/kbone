@@ -1,0 +1,219 @@
+@import '../../../../theme/index.less';
+
+.wrap {
+  display: flex;
+  padding: 18px 24px 24px;
+  border-radius: 24px 24px 0 0;
+  background: #F5F7FF;
+
+  .inputWrap {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    height: 98px;
+    font-family: Akrobat-Regular;
+    font-size: 28px;
+    color: #080F1E;
+    letter-spacing: 0.34px;
+    margin-right: 12px;
+
+    // justify-content: space-between;
+    .symbol {
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+    }
+
+    .exec {
+      display: flex;
+      margin-left: 12px;
+
+      span {
+        margin-top: 37px;
+      }
+
+      .x2 {
+        font-size: 36px;
+        color: #214365;
+        letter-spacing: 0.43px;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+  }
+
+  .input {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 12px;
+    height: 98px;
+    color: #080F1E;
+    letter-spacing: 0.48px;
+    line-height: 100px;
+
+    &.maxl {
+      font-size: 30px;
+      flex: 1;
+
+      &.valueMark {
+        &::before {
+          font-size: 30px;
+        }
+      }
+    }
+
+    &.placeholder {
+      font-size: 28px;
+      color: #BCBEC2;
+      letter-spacing: 0;
+    }
+
+    &.valueMark {
+      &::before {
+        content: attr(data-value);
+        height: 49px;
+        top: 50%;
+        margin-top: -24.5px;
+        line-height: 49px;
+        background: rgba(22, 45, 73, 0.1);
+        color: #8FB8DF;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 20px;
+        height: 49px;
+        width: 2px;
+        left: 0;
+        top: 50%;
+        margin-top: -24.5px;
+        background: @primary-base-color;
+        animation: keyboard-cursor infinite 1s step-start;
+      }
+    }
+
+    &.focus {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 49px;
+        width: 2px;
+        top: 50%;
+        margin-top: -24.5px;
+        background: @primary-base-color;
+        animation: keyboard-cursor infinite 1s step-start;
+      }
+    }
+  }
+
+  .ew {
+    background: #3D6BFA;
+    border-radius: 12px;
+    width: 104px;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    margin-right: 12px;
+  }
+
+  .button {
+    height: 98px;
+    width: 287px;
+    background: #FDD329;
+    border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    font-family: PingFangSC-Regular;
+    font-size: 0.32rem;
+    color: #212934;
+    letter-spacing: 0;
+    text-align: center;
+
+    .r {
+      font-family: PingFangSC-Regular;
+      font-size: 24px;
+      color: #3D6BFA;
+      letter-spacing: 0;
+      text-align: center;
+    }
+  }
+
+  .disabled {
+    background: #ECECEC;
+    font-size: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.warnCls {
+  background: #E13900;
+  border-radius: 24px 24px 0px 0px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-top: 14px;
+  height: 90px;
+  text-align: left;
+  margin-bottom: -38px;
+  margin-top: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.isMinBetCls {
+  color: #E13900;
+  margin-bottom: 18px;
+  font-size: 24px;
+  padding: 0 24px;
+}
+
+.fb_amount {
+  padding: 0 24px 24px;
+  display: flex;
+  justify-content: space-between;
+ 
+  span {
+    width: 107px;
+    height: 88px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #212934;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active{
+      background-image: linear-gradient(-45deg, #1C232D 0%, #384153 100%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+@keyframes keyboard-cursor {
+  0% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}

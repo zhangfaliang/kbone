@@ -1,0 +1,25 @@
+.wrap {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  z-index: 999;
+  &.thirdparty{
+    top: 0;
+    left: 0;
+  }
+
+  img {
+    width: 400px;
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wrap {
+    width: 750px;
+  }
+}

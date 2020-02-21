@@ -1,0 +1,32 @@
+.loading-wrapper {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 466px;
+  color: #fff;
+
+  img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    // background: #fff;
+  }
+
+  div {
+    margin-top: 40px;
+    font-size: 32px;
+    font-family: Akrobat-Bold;
+  }
+}
+@media screen and (min-width: 992px) {
+  .loading-wrapper {
+    width: 750px;
+    left: 50%;
+    margin-left: -375px;
+  }
+}

@@ -1,0 +1,92 @@
+.warp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: auto;
+  .title {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 43px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    background: #fff;
+  }
+  .titleWrap {
+    width: 100%;
+    background: #fdd329;
+  }
+}
+
+.item {
+  height: 114px;
+  width: 80x;
+  font-family: SFUIDisplay-Medium;
+  color: #7a7f85;
+  letter-spacing: 0;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+  .text {
+    display: inline-block;
+    line-height: 1.41;
+    position: relative;
+    font-size: 32px;
+    letter-spacing: 0;
+  }
+  .countNum {
+    font-size: 24px;
+  }
+  &.active {
+    color: #212934;
+    .text {
+      font-family: SFUIDisplay-Medium !important;
+    }
+    .text::before {
+      position: absolute;
+      bottom: -40px;
+      left: -6px;
+      height: 8px;
+      width: 80px;
+      content: '';
+      background-image: linear-gradient(90deg, #276ed9 0%, rgba(39, 110, 217, 0) 100%);
+      border-radius: 10px;
+    }
+  }
+}
+
+.card {
+  background-size: 100%;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 48px 0 24px;
+  border-radius: 24px;
+  height: 200px;
+  width: 702px;
+  .text {
+    font-family: PingFangSC-Semibold !important;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fbfbfb;
+    letter-spacing: 0;
+    margin-top: 30px;
+  }
+  .count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PingFangSC-Thin !important;
+    font-weight: 300;
+    font-size: 100px;
+    color: #fbfbfb;
+    letter-spacing: 0;
+    text-align: right;
+  }
+}

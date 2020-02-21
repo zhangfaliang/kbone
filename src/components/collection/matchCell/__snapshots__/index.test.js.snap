@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountDown Button  1`] = `
+<div
+  class="default-cell"
+>
+  <div
+    class="false"
+  />
+  <div />
+  <div>
+    <div
+      class="leftText"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;

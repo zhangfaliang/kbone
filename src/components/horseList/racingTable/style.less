@@ -1,0 +1,19 @@
+@radius:8px;
+.container {
+  background-color: #F6F8FF;
+  border-radius: @radius;
+  height: 2.01rem;
+  overflow: hidden;
+  >div {
+    &:first-child {
+      line-height: 72px;
+      border-radius: @radius @radius 0 0;
+      text-align: left;
+      background: #fff;
+      padding-left: 20px;
+      border-bottom: 1px solid #d8d8d8;
+      color: #214365;
+      font-size: 30px;
+    }
+  }
+}

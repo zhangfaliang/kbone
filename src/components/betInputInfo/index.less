@@ -1,0 +1,166 @@
+@import '../../theme/index.less';
+.default-bet-module {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: nowrap column;
+  position: fixed;
+  height: 0;
+  width: 100%;
+  z-index: @zindex-tooltip;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.60);
+  transition: height .3s ease-in-out;
+  &.isShowBetModule {
+    height: 100%;
+    display: flex;
+  }
+}
+
+.default-betinfor {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Akrobat-Regular;
+  background: @primary-base-color;
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: nowrap column;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0.34px;
+    .optionName {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 32px;
+      letter-spacing: 0.38px;
+      width: 100%;
+      font-family: Akrobat-Bold;
+    }
+    .changeHandicap{
+      padding: 0 18px;
+      background:@live-text-bg;
+      font-size: 32px;
+      color: #080F1E;
+      letter-spacing: 0.38px;
+      border-radius: 20px;
+    }
+    .gamePlayName {
+      display: flex;
+      font-size: 28px;
+      margin: 8px 0;
+      width: 100%;
+    }
+    .gameAgainst {
+      width: 100%;
+      display: flex;
+      color: @aide-color-secondary;
+    }
+    .sp{
+      margin-left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Akrobat-Bold;
+      height: 32px;
+    }
+    .changeSp {
+      padding: 0 18px;
+      background:@live-text-bg;
+      font-size: 32px;
+      color: #080F1E;
+      letter-spacing: 0.38px;
+      border-radius: 20px;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >span::before {
+      color: @aide-color-secondary;
+    }
+  }
+}
+
+.default-input {
+  //width: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .inputWrap {
+    display: flex;
+    flex-flow: nowrap column;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: #FFFFFF;
+    padding: 0 @h-p-20 ;
+    box-sizing: border-box;
+    .input {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 40px;
+      color: @primary-font-color;
+      letter-spacing: 0.48px;
+      .amountDisabled {
+        color: @disabled-color;
+      }
+      .amountSuffix {
+        margin-left: 8px;
+        font-size: 24px;
+        letter-spacing: 0.29px;
+      }
+    }
+  }
+  .possibleWinWrap {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: @remark-font-color;
+    width: 100%;
+  }
+  .fillAmount {
+    position: relative;
+    width:164px;
+    height: 100px;
+    .fillinbutton{
+      width:164px;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+
+    }
+    .maxstake {
+      position: absolute;
+      width: auto;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      height: 20px;
+      color: #333;
+      font-size: 24px;
+      text-align: center;
+    }
+    .fillAmountDisabled{
+      color: @disabled-color;
+    }
+  }
+}

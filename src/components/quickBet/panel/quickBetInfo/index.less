@@ -1,0 +1,209 @@
+@import '../../../../theme/index.less';
+
+.wrap {
+  padding: 18px 24px 0;
+  display: flex;
+  flex-direction: column;
+  .wrap_content {
+    display: flex;
+    justify-content: space-between;
+
+    .wrap_info {
+      &.isSuspended {
+        .wrap_info_title {
+          color: #336A91;
+        }
+
+        .wrap_info_playName {
+          color: #336A91;
+        }
+
+        .wrap_info_matchInfo {
+          color: #336A91;
+        }
+      }
+
+      .wrap_info_title {
+        font-family: PingFangSC-Regular;
+        font-size: 32px;
+        color: #212934;
+        letter-spacing: 0;
+        margin-bottom: 12px;
+        line-height: 45px;
+        .clear {
+          zoom: 1;
+          clear: both;
+        }
+
+        .title {
+          float: left;
+
+          &.handicapChange {
+            color: #ffffff;
+            background: #E13900;
+            border-radius: 12px;
+            padding: 0px 10px;
+            margin-left: 0;
+          }
+        }
+
+        .odds {
+          position: relative;
+          width: 125px;
+          float: left;
+          margin-left: 20px;
+
+          .oddChCls {
+            position: absolute;
+
+            &.oddChange {
+              background: @aide-color;
+              height: 230px;
+              margin-top: -14px;
+              z-index: 4;
+
+              .opts {
+                display: block;
+                position: absolute;
+                left: 0;
+              }
+
+              .ods {
+                padding: 14px 0;
+
+                img {
+                  transform: rotate(-180deg);
+                }
+              }
+
+            }
+          }
+
+          .ods {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &.isChangeSP {
+              font-family: PingFangSC-Regular;
+              font-size: 32px;
+              color: #FFFFFF;
+              letter-spacing: 0;
+              text-align: right;
+
+              span {
+                background: #E13900;
+                border-radius: 12px;
+                padding: 0 10px;
+              }
+            }
+
+            span {
+              font-family: Akrobat-Bold;
+              margin-left: 20px;
+            }
+
+            .hxl {
+              margin-right: 7px;
+            }
+
+            img {
+              width: 44px;
+              height: 44px;
+              display: flex;
+              transition: transform .35s;
+            }
+          }
+
+          .opts {
+            display: none;
+            font-family: Akrobat-Regular;
+            width: 100%;
+            font-size: 32px;
+            color: #8FB8DF;
+            letter-spacing: 0.38px;
+
+            >div {
+              padding-left: 20px;
+              height: 80px;
+              line-height: 80px;
+
+              &.opts_item_ac {
+                font-family: Akrobat-Bold;
+                color: #fff;
+
+              }
+
+              &:first-child {
+                border-top: 1px #176892 solid;
+                border-bottom: 1px #176892 solid;
+              }
+            }
+          }
+        }
+
+        // span {
+        //   padding: 0 20px;
+        //   font-family: Akrobat-Bold;
+        //   font-size: 32px;
+        //   color: #FFFFFF;
+        //   letter-spacing: 0.38px;
+        // }
+      }
+
+      .wrap_info_playName {
+        font-family: PingFangSC-Regular;
+        font-size: 28px;
+        color: #7A7F85;
+        letter-spacing: 0;
+        line-height: 40px;
+        margin-bottom: 4px;
+      }
+
+      .wrap_info_matchInfo {
+        font-family: PingFangSC-Regular;
+        font-size: 28px;
+        line-height: 40px;
+        color: #7A7F85;
+        letter-spacing: 0;
+      }
+    }
+
+    .close{
+      img{
+        margin:-2px -8px 0 0;
+        width: 48px;
+      }
+    }
+  }
+
+  .EwCls {
+    height: 88px;
+    display: flex;
+
+    .EwshowCls {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      font-family: PingFangSC-Regular;
+      font-size: 28px;
+      color: #7A7F85;
+      letter-spacing: 0;
+      span {
+        width: 44px;
+        height: 44px;
+        margin-right: 16px;
+        background: url('../../../../assets/s02/ew.png') no-repeat;
+        background-size: 100% 100%;
+        &.active {
+          width: 44px;
+          height: 44px;
+          background: url('../../../../assets/s02/ew-active.png') no-repeat;
+          background-size: 100% 100%;
+        }
+
+      }
+    }
+  }
+}

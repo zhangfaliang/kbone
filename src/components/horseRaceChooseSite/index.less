@@ -1,0 +1,65 @@
+@import '../../theme/index.less';
+@defaultWidth: 100%;
+
+.default-back {
+  width:44px;
+  height: 60px;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 1px solid @tab-bar-border-color;
+  box-sizing: border-box;
+  margin-left:5px;
+  span {
+    &:before {
+      transform: rotate(180deg);
+      color: #FFFFFF;
+      font-size: 50px;
+    }
+
+  }
+}
+
+.default-choose-title {
+  height: 88px;
+  width: @defaultWidth;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: @match-group-bg;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.default-choose-site {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.default-site-block {
+ 
+  border-top: 1px solid @tab-bar-border-color;
+  background: @match-group-bg;
+
+  &::-webkit-scrollbar {
+    width: 0 !important
+  }
+  .site {
+    width: @defaultWidth;
+    padding-left: 20px;
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Akrobat-Regular;
+    font-size: 32px;
+    color: @aide-color-secondary;
+  }
+
+  .active {
+    font-family: Akrobat-SemiBold;
+    color: #FFFFFF;
+  }
+
+}

@@ -1,0 +1,38 @@
+.default {
+  height: 20px;
+  width: 16px;
+  background-size: 16px 20px;
+  position: absolute;
+  right: 9px;
+  top: 5px;
+  // background-image: url(../../../../assets/s02/increased.png);
+}
+
+.increased {
+  background-image: url(../../../../assets/s02/increased.png);
+  animation: betchange 0.8s linear infinite;
+}
+
+.reduced {
+  background-image: url(../../../../assets/s02/reduced.png);
+  animation: betchange 0.8s linear infinite;
+}
+
+@keyframes betchange {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  50.01% {
+    opacity: 0;
+  }
+
+  /* 注意这里定义50.01%立刻透明度为０，可以设置闪烁效果 */
+  100% {
+    opacity: 0;
+  }
+}

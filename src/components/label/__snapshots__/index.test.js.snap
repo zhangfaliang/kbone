@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lable-component base 1`] = `
+<div
+  class="default-label"
+/>
+`;
+
+exports[`lable-component baseLeftTitleText 1`] = `
+<div
+  class="default-left-title"
+>
+  <img
+    alt=""
+    class="gameTypeImg"
+    src="https://avatars3.githubusercontent.com/u/17559536?s=40&v=4"
+  />
+  <span
+    class="titleText"
+  />
+</div>
+`;
+
+exports[`lable-component baseRight 1`] = `
+<div
+  class="default-right-table"
+/>
+`;
+
+exports[`lable-component baseprefixClsNull 1`] = `
+<div
+  class="default-label"
+/>
+`;
+
+exports[`lable-component renderLableChildran 1`] = `
+<div
+  class="default-label showTBBorder"
+>
+  <div
+    class="default-left-title"
+  >
+    <img
+      alt=""
+      class="gameTypeImg"
+      src="https://avatars3.githubusercontent.com/u/17559536?s=40&v=4"
+    />
+    <span
+      class="titleText"
+    />
+  </div>
+  <div
+    class="default-label-center"
+  >
+    Race 1
+  </div>
+  <div
+    class="default-right-table"
+  />
+</div>
+`;

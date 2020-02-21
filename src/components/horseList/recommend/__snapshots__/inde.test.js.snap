@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recommend Recommend 1`] = `
+Array [
+  <div
+    class="title"
+  >
+    <span>
+      <img
+        alt="Horse Racing Logo"
+        src="11111"
+      />
+    </span>
+    <span />
+  </div>,
+  <div
+    class="container"
+  />,
+]
+`;

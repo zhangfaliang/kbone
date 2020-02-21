@@ -1,0 +1,119 @@
+@defaultHeight: 72px;
+@defaultWidth:710px;
+@singleWidth: 200px;
+@foreCastWidth: 324px;
+@triCastWidth: 432px;
+@foreCastNoRYWidth: 216px;
+@triCastNoRYWidth: 324px;
+
+.default-horse-race-info-group {
+  display: flex;
+  width: @defaultWidth;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 8px;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+
+}
+.fore-tri-finish-horse-race-info-group {
+  &:extend(.default-horse-race-info-group all);
+}
+
+.single-horse-race-info-group-title {
+  height: @defaultHeight;
+  width: @defaultWidth;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  span {
+    display: flex;
+    height: @defaultHeight;
+    font-family: Akrobat-Regular;
+    font-size: 30px;
+    color: #214365;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label {
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .text {
+    width: @singleWidth;
+  }
+
+}
+
+.foreCast-horse-race-info-group-title {
+  &:extend(.single-horse-race-info-group-title all);
+
+  .text {
+    width: @foreCastWidth;
+  }
+
+}
+
+.triCast-horse-race-info-group-title {
+  &:extend(.single-horse-race-info-group-title all);
+
+  .text {
+    width: @triCastWidth;
+  }
+
+}
+.i18n-horse-race-info-group-title {
+  &:extend(.single-horse-race-info-group-title all);
+  padding: 0 20px;
+  .text {
+    width: auto;
+  }
+}
+
+.single-finish-horse-race-info-group-title {
+  &:extend(.i18n-horse-race-info-group-title all);
+}
+.fore-tri-finish-horse-race-info-group-title{
+  &:extend(.i18n-horse-race-info-group-title all);
+  
+  span{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    flex: 1;
+  }
+  .label {
+    justify-content:center;
+  }
+  .text {
+    justify-content:flex-end;
+  }
+}
+.close-horse-race-info-group-title{
+  &:extend(.i18n-horse-race-info-group-title all);
+}
+
+.foreCast-no-ry-horse-race-info-group-title {
+  &:extend(.foreCast-horse-race-info-group-title all);
+
+  .text {
+    width: @foreCastNoRYWidth;
+  }
+
+}
+
+
+.triCast-no-ry-horse-race-info-group-title {
+  &:extend(.triCast-horse-race-info-group-title all);
+
+  .text {
+    width: @triCastNoRYWidth;
+  }
+
+}

@@ -1,0 +1,42 @@
+.dots {
+  height: 20px !important;
+  position: absolute;
+  bottom: 0px;
+  width: calc(100vw - 100vw*(326/750)) !important;
+  right: 0;
+  display: flex;
+  justify-content: center !important;
+  padding: 0 !important;
+  background-color: #fff;
+  z-index: 2;
+  align-items: top;
+
+  >span {
+    width: 16px;
+    height: 8px;
+    border-radius: 4px;
+    background: #D8D8D8;
+
+    &:nth-child(1) {
+      margin-right: 4px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 4px;
+    }
+  }
+}
+
+.leftDot {
+  background: #3D6BFA !important;
+}
+
+.rightDot {
+  background: #3D6BFA !important;
+}
+
+@media screen and (min-width: 992px) {
+  .dots {
+    width: 424px !important;
+  }
+}

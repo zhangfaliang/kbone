@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChoosePlay base 1`] = `
+<div
+  class="default-choose-play"
+>
+  <span
+    class="text"
+  />
+  <span
+    class="chooseIcon"
+  >
+    <span
+      class="iconfont icon-mycopy"
+    />
+  </span>
+</div>
+`;
+
+exports[`ChoosePlay prefixCls 1`] = `
+<div
+  class="default-choose-play"
+>
+  <span
+    class="text"
+  />
+  <span
+    class="chooseIcon"
+  >
+    <span
+      class="iconfont icon-mycopy"
+    />
+  </span>
+</div>
+`;
+
+exports[`GamePlayModule base 1`] = `
+<div
+  class="default-game-play-module open"
+  style="top:undefinedpx"
+/>
+`;
+
+exports[`GamePlayModule base 2`] = `
+<div
+  class="default-game-play-module open"
+  style="top:undefinedpx"
+>
+  <div
+    class="default-choose-play"
+  >
+    <span
+      class="text"
+    />
+    <span
+      class="chooseIcon"
+    >
+      <span
+        class="iconfont icon-mycopy"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`GamePlayModule prefixCls 1`] = `
+<div
+  class="default-game-play-module open"
+  style="top:undefinedpx"
+/>
+`;
+
+exports[`GamePlayModule shouldComponentUpdate 1`] = `true`;
+
+exports[`GameTypeList base 1`] = `
+<div
+  class="default-game-type-list"
+>
+  <div
+    class="footer"
+  />
+</div>
+`;
+
+exports[`GameTypeList prefixCls null 1`] = `
+<div
+  class="default-game-type-list"
+>
+  <div
+    class="footer"
+  />
+</div>
+`;
+
+exports[`LiveNum base 1`] = `null`;
+
+exports[`LiveNum prefixCls null 1`] = `null`;
+
+exports[`MatchListTitle base 1`] = `
+<div
+  class="default-match-list-title"
+>
+  <div
+    class="default-choose-play"
+  >
+    <span
+      class="text"
+    />
+    <span
+      class="chooseIcon"
+    >
+      <span
+        class="iconfont icon-mycopy"
+      />
+    </span>
+  </div>
+  <div
+    class="default-left-title"
+  >
+    <img
+      alt=""
+      class="gameTypeImg"
+      src="https://avatars3.githubusercontent.com/u/17559536?s=40&v=4"
+    />
+    <span
+      class="titleText"
+    />
+  </div>
+  <div
+    class="default-game-play-module"
+    style="top:0px"
+  />
+  <div
+    class="default-right-table"
+  />
+</div>
+`;
+
+exports[`MatchListTitle prefixCls 1`] = `
+<div
+  class="default-match-list-title"
+/>
+`;

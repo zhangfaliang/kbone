@@ -1,0 +1,104 @@
+.walletWrap {
+  height: 163px;
+  width: 100%;
+  background: #fdd329;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+
+  .wallet {
+    width: 702px;
+    position: relative;
+    height: 141px;
+    background-image: linear-gradient(-45deg, #1c232d 0%, #384153 100%);
+    border-radius: 24px 24px 0 0;
+    border-radius: 24px 24px 0px 0px;
+    display: flex;
+    // justify-content: space-between;
+    padding: 0 0px 0 34px;
+    box-sizing: border-box;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      content: '';
+      height: 2px;
+      width: 698px;
+      background: #1c232d
+    }
+
+    .left {
+      width: 323px;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column nowrap;
+      color: #ffffff;
+      height: 141px;
+      padding-top: 14px;
+
+      .money {
+        font-family: PingFangSC-Thin !important;
+        font-weight: 300;
+        font-size: 48px;
+        letter-spacing: 0;
+        line-height: 1.44;
+      }
+
+      .text {
+        font-size: 24px;
+        letter-spacing: 0;
+        margin-left: 6px;
+        line-height: 1.375;
+      }
+    }
+
+    .right {
+      display: flex;
+      height: 141px;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 216px;
+      padding-top: 24px;
+    }
+    .oneRight{
+      justify-content: flex-end;
+      // align-items: flex-start;
+    }
+  }
+}
+
+.operationWallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  .img {
+    height: 48px;
+    width: 60px;
+  }
+
+  span {
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 1.375;
+    margin-top: 9px;
+  }
+}
+
+.customerService {
+  position: absolute;
+  right: 0;
+  width: 72px;
+  height: 72px;
+  background: #FFFFFF;
+  border-radius: 100px 0 0 100px;
+  background-image: url(../../assets/s02/tabbar_kf_i.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 48px;
+}

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OtherMatch base 1`] = `
+<div
+  class="default-other-match"
+/>
+`;
+
+exports[`OtherMatch basePrefixNull 1`] = `
+<div
+  class="default-other-match"
+/>
+`;
+
+exports[`OtherMatch clickLeftTitleText1 1`] = `
+<div
+  class="default-other-match"
+>
+  <div
+    class="default-label"
+  />
+  <div
+    class="default-label"
+  />
+</div>
+`;

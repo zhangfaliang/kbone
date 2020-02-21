@@ -1,0 +1,95 @@
+@import '../../theme/index.less';
+
+.finish-label {
+  height: 100px;
+  width: 710px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-top: 1px solid @bet-border-color;
+  background: #FFFFFF;
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Akrobat-SemiBold;
+    font-size: 32px;
+    color: @primary-font-color;
+  }
+
+  .center {
+    font-family: Akrobat-Regular;
+    font-size: 32px;
+    color: @progress-text-color;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+    font-family: Akrobat-Regular;
+    font-size: 32px;
+    color: @progress-text-color;
+
+    .noEntry {
+      font-family: Akrobat-Regular;
+      font-size: 32px;
+      color: @aide-color-secondary;
+    }
+  }
+}
+.close-label{
+  &:extend(.finish-label all);
+}
+.fore-tri-finish-label{
+  &:extend(.finish-label all);
+  .left,.center,.right{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+  }
+  .left{
+    justify-content: flex-start;
+    }
+  .center{
+    justify-content: center;
+  }
+  .right{
+    align-items:flex-end;
+  }
+}
+
+.default-no-runners {
+  width: 710px;
+  height: 100px;
+  overflow: scroll;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border;
+  border-top: 1px solid @bet-border-color;
+
+  .noRunText {
+    display: flex;
+    font-family: Akrobat-SemiBold;
+    font-size: 32px;
+    color: @primary-font-color;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+
+  .noRunner {
+    display: flex;
+    font-family: Akrobat-Regular;
+    font-size: 32px;
+    color: @remark-font-color;
+    padding-right: 20px;
+    box-sizing: border;
+    flex-shrink: 0;
+  }
+}

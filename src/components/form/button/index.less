@@ -1,0 +1,66 @@
+@import '../../../theme/index.less';
+
+.wrap {
+  display: block;
+  outline: 0 none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  height: 98px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFang-SC-Regular;
+  font-size: 36px;
+  color: #212934;
+  background: #FDD329;
+  letter-spacing: 0;
+  text-align: center;
+
+  &.oval {
+    border-radius: 24px;
+  }
+
+  &.half-radius {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  &.primary {
+    font-family: PingFang-SC-Regular;
+    font-size: 36px;
+    color: #212934;
+    background: #FDD329;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &.ghost {
+    font-family: PingFang-SC-Regular;
+    font-size: 36px;
+    color: #212934;
+    background: #FDD329;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &.active {
+    background: #FDD329;
+  }
+
+  &.disabled {
+    background: #DCDEE2;
+    color: @button-disabled-color;
+    font-family: PingFang-SC-Regular;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}

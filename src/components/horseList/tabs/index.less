@@ -1,0 +1,48 @@
+@import '../../../theme/index.less';
+@defaultWidth: 100%;
+
+.default-tabs {
+  width: @defaultWidth;
+  background: @match-group-bg;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .children {
+    width: @defaultWidth;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .tab {
+    height: @tab-bar-height;
+    width: @defaultWidth;
+    display: flex;
+    // padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    // border-top: 1px solid #284971;
+
+    .tabText {
+      font-family: Akrobat-Regular;
+      font-size: 32px;
+      color: #8FB8DF;
+      letter-spacing: 0.38px;
+      padding-right: 15px;
+    }
+
+    .isActive {
+      font-family: Akrobat-Bold;
+      color: #FFFFFF;
+    }
+
+  }
+  .tabNoChina {
+    .tabText {
+      padding-right: 40px;
+    }
+  }
+}
+

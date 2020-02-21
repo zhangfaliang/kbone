@@ -1,0 +1,28 @@
+@import '../../theme/index.less';
+
+@pushHeight: 144px;
+.push-inplay-betButtonCell {
+  display: flex;
+  height: @pushHeight;
+  justify-content: flex-end;
+  div:first-child{
+    //border-left: none;
+  }
+}
+.push-before-betButtonCell {
+  &:extend(.push-inplay-betButtonCell all);
+  box-sizing: border-box;
+}
+.detail-betButtonCell {
+  &:extend(.push-inplay-betButtonCell all);
+  height: auto;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+.s02-detail-betButtonCell {
+  &:extend(.detail-betButtonCell all);
+  justify-content:space-between;
+}
+
+

@@ -1,0 +1,142 @@
+@import '../../theme/index.less';
+@DefaultWidth: 108px;
+@DefaultHeight: 100px;
+@middleWidth: 200px;
+@middleHeight: 148px;
+@lagerWidth: 710px;
+@lagerHeight: 100px;
+@SPWidth:  200px;
+@SPHeight: 100px;
+@WithdrawForeCastWidthAndAny:324px;
+@WithdrawForeCastWidth:216px;
+@WithdrawTriCastWidthAndAny:432px;
+@WithdrawTriCastWidth:324px;
+.default-horse-race-bet-btn {
+  height: @DefaultHeight;
+  width: @DefaultWidth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F6F8FF;
+  border-left: 1px solid #D7DAE0;
+  flex-shrink: 0;
+
+  .betText,
+  .odds {
+    font-family: Akrobat-Regular;
+    font-size: 32px;
+    color: #214365;
+  }
+
+  &.isActive {
+    background: #00A7FE;
+
+    .betText,
+    .odds {
+      color: #FFFFFF;
+    }
+    
+  }
+  &.isHide{
+    pointer-events: none;
+  }
+  &.disabled {
+    pointer-events: none;
+    background-color: @bet-disabled-bg !important;
+    color: @disabled-color !important;
+
+    .betText,
+    .odds {
+      color: @disabled-color !important;
+    }
+
+    .historySp {
+      span {
+        color: @disabled-color !important;
+      }
+    }
+  }
+
+  &.isErrorSelect {
+    background: #8FB8DF;
+  }
+}
+
+
+.middle-horse-race-bet-btn {
+  &:extend(.default-horse-race-bet-btn all);
+  height: @middleHeight;
+  width: @middleWidth;
+
+  .betText,
+  .odds {
+    font-family: Akrobat-Bold;
+    font-size: 36px;
+    color: #080F1E;
+  }
+
+  .historySp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-family: Akrobat-Regular;
+      font-size: 32px;
+      color: #214365;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 49px;
+    }
+  }
+
+  &.isActive {
+    .historySp {
+      span {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+
+.sp-horse-race-bet-btn {
+  &:extend(.default-horse-race-bet-btn all);
+  height: @SPHeight;
+  width: @SPWidth;
+
+  .betText,
+  .odds {
+    font-family: Akrobat-Bold;
+    font-size: 36px;
+    color: @primary-font-color;
+  }
+
+}
+
+
+.withdraw-fore-any-horse-race-bet-btn {
+  &:extend(.default-horse-race-bet-btn  all);
+  height: @SPHeight;
+  width: @WithdrawForeCastWidthAndAny;
+}
+.withdraw-fore-horse-race-bet-btn {
+  &:extend(.default-horse-race-bet-btn  all);
+  height: @SPHeight;
+  width: @WithdrawForeCastWidth;
+}
+.withdraw-tir-any-horse-race-bet-btn {
+  &:extend(.default-horse-race-bet-btn  all);
+  height: @SPHeight;
+  width: @WithdrawTriCastWidthAndAny;
+}
+.withdraw-tir-horse-race-bet-btn {
+  &:extend(.default-horse-race-bet-btn  all);
+  height: @SPHeight;
+  width: @WithdrawTriCastWidth;
+}
+
+
+

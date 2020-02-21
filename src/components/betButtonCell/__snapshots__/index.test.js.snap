@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BetButtonCell base 1`] = `
+<div
+  class="push-inplay-betButtonCell"
+>
+  <div
+    class="default-bet-button"
+  >
+    <span
+      class="up"
+    >
+      <span
+        class="iconfont icon-sheng"
+      />
+    </span>
+    <span
+      class="down"
+    >
+      <span
+        class="iconfont icon-jiang"
+      />
+    </span>
+    <div
+      class="wrapSp"
+    >
+      <span
+        class="sp"
+      />
+    </div>
+  </div>
+  <div
+    class="row-line"
+  />
+</div>
+`;

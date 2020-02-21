@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Horizontal 赛马场列表容器 1`] = `
+<div
+  class="srcoll"
+  id="12311"
+>
+  <div
+    class="onTouchBody"
+  >
+    <div>
+      <div>
+        1213212
+      </div>
+    </div>
+    <div>
+      <div>
+        1213212
+      </div>
+    </div>
+  </div>
+</div>
+`;

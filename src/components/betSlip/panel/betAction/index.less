@@ -1,0 +1,32 @@
+.wrap {
+  position: relative;
+
+  .a {
+    transition: .25s;
+    transform: translateY(100%);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    &.avisabled{
+      transform: translateY(-100%);
+      &.level2{
+        margin-top: -100px;
+      }
+    }
+  }
+  .a_b {
+    width: 100%;
+    transition: .25s;
+    transform: translateY(100%);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    &.a_bvisabled{
+      transform: translateY(-100%);
+    }
+    &.a_b2visabled{
+      transform: translateY(-200%);
+    }
+  }
+}

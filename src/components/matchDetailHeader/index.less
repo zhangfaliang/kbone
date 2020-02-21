@@ -1,0 +1,64 @@
+@import '../../theme/index.less';
+.default-match-detail-header-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: @tab-bar-height;
+  width: 40px;
+} 
+.default-match-detail-header {
+  height: @tab-bar-height;
+  width: 100%;
+  // background: @aide-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 7px;
+  box-sizing: border-box;
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .leftIcon {
+     &:extend(.default-match-detail-header-icon all);
+     transform: rotate(180deg);
+     >span:before{
+      color: #FFFFFF;
+      font-size: 50px;
+    }
+    }
+    .leftText {
+      font-size: @base-font-size;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      padding-left: @h-p-20;
+      margin-left: 6px;
+      height: @iconHeight;
+      border-left: 1px solid @tab-bar-border-color;
+    }
+  }
+  .center{
+    font-size: @base-font-size;
+  }
+  .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+    .rigthIcon{
+      &:extend(.default-match-detail-header-icon all);
+      margin-left: 53px;
+      >span:before{
+        color: @aide-color-secondary;
+      }
+    }
+    .activeIcon{
+      >span:before{
+        color: #FFFFFF
+      }
+    }
+  }
+}

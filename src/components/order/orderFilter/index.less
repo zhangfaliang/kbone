@@ -1,0 +1,69 @@
+@import '../../../theme/index.less';
+
+.wrap {
+  width: 100%;
+  background: @aide-color;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  >div{
+    display: flex;
+    width: 100%;
+    &.mark{
+      position: fixed;
+      height: 100%;
+      z-index: -1;
+      background:rgba(0, 0, 0, 0.6);
+    }
+  }
+  .nav{
+    border-bottom: 1px @tab-bar-border-color solid;
+  }
+  .item{
+    flex: 1;
+    .header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: @tab-bar-height;
+      font-size: @base-font-size;
+      color: @secondary-font-color;
+      letter-spacing: 0.34px;
+      span{
+        display: flex;
+        align-items: center;
+        &.hight{
+          color: #fff;
+          font-family: Akrobat-Bold;
+        }
+        img{
+          width: @nav-bar-back-height;
+          height: @nav-bar-back-height;
+          transform: rotate(90deg);
+          transition: all .5s;
+          &.imgUp{
+            transform: rotate(-90deg);
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+  .body{
+    display: flex;
+    height: @tab-bar-height;
+    background: @primary-color;
+    border-radius: 0 0 8px 8px;
+    align-items: center;
+    font-size: @base-font-size;
+    color: @secondary-font-color;
+    >div{
+      &.hight{
+        color: #fff;
+        font-family: Akrobat-Bold;
+      }
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

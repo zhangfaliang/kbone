@@ -1,0 +1,32 @@
+@import '../../theme/index.less';
+
+.wrap{
+  z-index: @zindex-back-top;
+  position: fixed;
+  right: 0;
+  bottom: 300px;
+  cursor: pointer;
+}
+.content {
+  height: 100px;
+  width: 100px;
+  border-bottom-left-radius: @base-border-radius;
+  border-top-left-radius: @base-border-radius;
+  background-color: @primary-color;
+  font-family: Akrobat-Bold;
+  font-size: 32px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  transition: all .3s @ease-in-out;
+  overflow: hidden;
+}
+
+.icon {
+  transform: rotate(-90deg);
+  margin: 0 auto;
+  width: @iconWidth;
+  height: @iconHeight;
+  background: url('../../assets/v1/back@3x.png');
+  background-size: contain;
+}

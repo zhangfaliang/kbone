@@ -1,0 +1,102 @@
+.verifyCodeWrap {
+  .codeCls {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .line {
+      width: 68px;
+      height: 115px;
+      border-radius: 8px;
+      font-family: Akrobat-Regular;
+      font-size: 60px;
+      display: inline-block;
+      color: #FFFFFF;
+      letter-spacing: 0.72px;
+      text-align: center;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #284971;
+        bottom: 0;
+        left: 0;
+      }
+      &.animated {
+        &::after{
+          content: '';
+          position: absolute;
+          height: 95px;
+          width: 3px;
+          background: #fff;
+          animation: coruscate 1s infinite;
+        }
+      }
+    }
+  }
+
+  .input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    caret-color: transparent;
+  }
+
+  @keyframes coruscate {
+    0% {
+      opacity: 0
+    }
+
+    25% {
+      opacity: 0
+    }
+
+    50% {
+      opacity: 1
+    }
+
+    75% {
+      opacity: 1
+    }
+
+    to {
+      opacity: 0
+    }
+  }
+}
+
+
+.actionCls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  >div {
+    &:first-child {
+      font-size: 28px;
+      color: #E62300;
+      letter-spacing: 0.34px;
+      line-height: 28px;
+    }
+  }
+}
+
+.countDown {
+  font-family: Akrobat-Bold;
+  font-size: 28px;
+  color: #FFE011;
+  letter-spacing: 0.34px;
+  text-align: center;
+  line-height: 28px;
+}
+.disabledCls {
+  font-family: Akrobat-Regular;
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: 0.34px;
+  text-align: center;
+  line-height: 28px;
+  background: transparent;
+}

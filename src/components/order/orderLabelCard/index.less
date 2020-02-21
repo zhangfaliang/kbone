@@ -1,0 +1,31 @@
+@import '../../../theme/index.less';
+
+.wrap{
+  width: 100%;
+  background: @aide-color;
+  display: flex;
+  flex-direction: column;
+  &.padding{
+    padding:0;
+  }
+  .label{
+    height: @tab-bar-height;
+    font-size: @base-font-size;
+    display: flex;
+    align-items: center;
+    color: @secondary-font-color;
+  } 
+  .body{
+    padding: 18px 0 20px 0;
+    // border-radius: @base-border-radius;
+    background: #fff;
+    font-size: @primary-tab-font-size-secondary;
+    color: @primary-font-color;
+    letter-spacing: 0.29px;
+    border-bottom: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button组件 basic use 1`] = `
+<a
+  class="default-button"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsActive 1`] = `
+<a
+  class="check-all-button"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsBtnText 1`] = `
+<a
+  class="check-all-button"
+  href="javascript:;"
+>
+  <span>
+    btnText
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsClickCheckBtn 1`] = `
+<a
+  class="check-all-button"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsDefaultActive 1`] = `
+<a
+  class="check-all-button active"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsDisabled 1`] = `
+<a
+  class="check-all-button disabled"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsPrefixCls 1`] = `
+<a
+  class="prefixCls-button"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;
+
+exports[`Button组件 withPropsPrefixClsNull 1`] = `
+<a
+  class="default-button"
+  href="javascript:;"
+>
+  <span>
+    Check all In-Play
+  </span>
+</a>
+`;

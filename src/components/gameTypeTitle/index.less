@@ -1,0 +1,45 @@
+@import '../../theme/index.less';
+.default-game-type-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color:@aide-color-secondary;
+  background:#162D49;
+  border-bottom: 1px solid #284971;
+  div:first-child{
+    &::before{
+      position: absolute;
+      top:20px;
+      right: 0px;
+      display: block;
+      height: 40px;
+      width: 1px;
+      border-left:#284971 solid 1px;
+      content: '';
+      
+    }
+  }
+  .items {
+    display: flex;
+    flex:1;
+    height: @tab-bar-height;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+   
+    .gameTypeTextPrefix{
+      margin-right: 10px;
+    }
+    .activeTypeText {
+      color: @bet-sp-active-color ;
+    }
+    .img {
+      height: @iconHeight;
+      width: @iconWidth;
+      resize-mode: contain;
+      margin: 0 20px 0 20px;
+    }
+  }
+}

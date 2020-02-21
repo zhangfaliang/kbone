@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`order组件 OrderCard 1`] = `
+<div
+  class="wrap"
+>
+  <div
+    class="label"
+  >
+    Order information
+  </div>
+  <div
+    class="list"
+  >
+    <div
+      class="item large itemIsVerticalCenter"
+    >
+      <div
+        class="item_L"
+      >
+        match
+      </div>
+      <div
+        class="item_R"
+      >
+        Royal Pari FC VS Nacional Potosi
+      </div>
+    </div>
+    <div
+      class="item large itemIsVerticalCenter"
+    >
+      <div
+        class="item_L"
+      >
+        Match Result
+      </div>
+      <div
+        class="item_R"
+      >
+        Market
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`order组件 OrderLabelCard 1`] = `
+<div
+  class="wrap"
+>
+  <div
+    class="label"
+  >
+    Royal Pari FC 2.8
+  </div>
+  <div
+    class="body"
+  >
+    <div>
+      <div
+        class="item small itemIsVerticalCenter"
+      >
+        <div
+          class="item_L"
+        >
+          122
+        </div>
+        <div
+          class="item_R"
+        >
+          order:222
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="item small itemIsVerticalCenter"
+      >
+        <div
+          class="item_L"
+        >
+          122
+        </div>
+        <div
+          class="item_R"
+        >
+          order:222
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="item small itemIsVerticalCenter"
+      >
+        <div
+          class="item_R"
+        >
+          order:222
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="body"
+  >
+    <div>
+      <div
+        class="item small itemIsVerticalCenter"
+      >
+        <div
+          class="item_L"
+        >
+          122
+        </div>
+        <div
+          class="item_R"
+        >
+          order:222
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,112 @@
+.wrapper {
+  width: 100%;
+  height: 328px;
+  position: relative;
+
+  // background-size: cover;
+  // background-image: url('../../assets/bg-football-field.png');
+  font-family: Akrobat-Regular;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding: 4px   20px 16px 20px;
+  .switchWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.inifo {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  height: 218px;
+}
+
+.events {
+  height: 122px;
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+
+.line {
+  width: 132px;
+  height: 4px;
+  display: inline-block;
+  background: #fff;
+}
+
+.block-with-right-line {
+  position: relative;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  width: 102px;
+  .img {
+    height: 52px;
+    width: 52px;
+  }
+  .home,
+  .away {
+    border-radius: 8px 8px 26px 26px ;
+    background: #fff;
+    position: absolute;
+    top:4px;
+    display: inline-flex;
+    align-items:  space-between;
+    flex-direction: column;
+   
+  }
+  .away {
+    border-radius:  26px 26px 8px 8px;
+    top:35px;
+   
+  }
+  .eventTime {
+    height: 30px;
+    width: 52px;
+    font-family: SFUIText-Regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #080f1e;
+    letter-spacing: 0;
+   
+  }
+  .neutral-top {
+    position: absolute;
+    padding-bottom: 84px;
+    left: 10px;
+  }
+}
+
+.foo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.block {
+  height: 100%;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Akrobat-Bold;
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.event-point {
+  width: 20px;
+  height: 20px;
+}
+
+.img-wrapper {
+  height: 40px;
+  line-height: 40px;
+}

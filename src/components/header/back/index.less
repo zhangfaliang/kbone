@@ -1,0 +1,112 @@
+@import '../../../theme/index.less';
+
+.wrap {
+  height: @nav-bar-height;
+  width: 100%;
+  background: #fff;
+  font-family: PingFang-SC-Regular;
+  font-size: 36px;
+  color: #212934;
+  letter-spacing: 0;
+  text-align: center;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .main {
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0 22px 0 14px;
+    position: relative;
+    justify-content: space-between;
+
+    .back {
+      position: relative;
+      display: flex;
+      padding-right: 6px;
+      margin-right: 6px;
+      z-index: 2;
+
+      img {
+        height: 48px;
+        width: 48px;
+      }
+
+      // &::after{
+      //   content: '';
+      //   position: absolute;
+      //   height: 40px;
+      //   width: 1px;
+      //   background: @secondary-font-color;
+      //   top: 50%;
+      //   margin-top: -20px;
+      //   right: 0;
+      // }
+    }
+
+    .noBack {
+      display: none;
+    }
+
+    .right {
+      z-index: 2;
+
+      &.noRight {
+        visibility: hidden;
+      }
+
+      display: flex;
+      padding-left: 6px;
+      margin-left: 6px;
+      color: #ffffff;
+      letter-spacing: 0;
+      font-family: PingFangSC-Regular;
+      font-size: 28px;
+      color: #212934;
+      letter-spacing: 0;
+      text-align: right;
+    }
+
+    .content {
+      text-align: center;
+      font-size: @primary-active-blod-font-size;
+      letter-spacing: 0.38px;
+      position: absolute;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      text-transform: capitalize;
+
+      .title {
+        padding: 0 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wrap {
+    width: 750px;
+
+    &.fixed {
+      top: 0;
+      left: 50%;
+      margin-left: -375px;
+    }
+  }
+}

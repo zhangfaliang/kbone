@@ -1,0 +1,182 @@
+.Model {
+  position: fixed;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.40);
+  display: flex;
+  width: 100%;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  >div {
+    &:nth-child(1) {
+      background: #FFFAF4;
+      border-radius: 16px;
+      width: 686px;
+      height: 889px;
+      // height: 1000px;
+      // margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+
+      .header {
+        height: 120px;
+        background-image: url(../../../assets/activePage/modelTitle.png);
+        background-position: center;
+        background-size: 290px 39px;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .close {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          width: 48px;
+          height: 48px;
+          background-image: url(../../../assets/activePage/close.png);
+          background-size: 24px;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .body {
+        height: 735px;
+        max-height: 735px;
+        // height: 846px;
+        // max-height: 846px;
+        box-sizing: border-box;
+        padding: 0px 24px 0px 24px;
+        font-size: 28px;
+        color: #363142;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 12px;
+          /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+          // background: #007acc;
+        }
+
+        /*定义滚动条轨道（凹槽）样式*/
+        // &::-webkit-scrollbar-track {
+        //   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        //   /* 较少使用 */
+        //   border-radius: 3px;
+        // }
+
+        /*定义滑块 样式*/
+        &::-webkit-scrollbar-thumb {
+          background: #E4DBF6;
+          border-radius: 6px;
+        }
+
+        >div {
+          &:nth-child(1) {
+            padding: 0 16px;
+          }
+        }
+
+        .text {
+          display: flex;
+          align-items: center;
+          padding: 6px 0;
+          margin: 10px 0;
+
+          >div {
+            &:first-child {
+              background-image: url(../../../assets/activePage/serialNumber.png);
+              width: 28px;
+              height: 28px;
+              // line-height: 28px;
+              padding: 2px 0;
+              font-size: 24px;
+              background-size: 100%;
+              text-align: center;
+              background-repeat: no-repeat;
+            }
+
+            &:nth-child(2) {
+              padding-left: 14px;
+            }
+          }
+        }
+
+        .table {
+          display: flex;
+          justify-content: flex-end;
+
+          >div {
+            width: 186px;
+
+            >div {
+              text-align: center;
+              line-height: 48px;
+              margin-left: 4px;
+
+              &:nth-child(1) {
+                background-color: #E4DBF6;
+                border-radius: 4px 4px 0 0;
+              }
+
+              &:nth-child(2) {
+                background-color: #e4dbf680;
+                border-radius: 0 0 4px 4px;
+              }
+            }
+          }
+        }
+
+        .textLast {
+          display: flex;
+          align-items: flex-start;
+          padding: 6px 0;
+          margin: 10px 0;
+
+          >div {
+            &:first-child {
+              background-image: url(../../../assets/activePage/serialNumber.png);
+              min-width: 28px;
+              height: 28px;
+              // line-height: 28px;
+              padding: 2px 0;
+              background-size: 100%;
+              text-align: center;
+              font-size: 24px;
+              color: #fff;
+              background-repeat: no-repeat;
+              margin-top: 3px;
+            }
+
+            &:nth-child(2) {
+              padding-left: 14px;
+              line-height: 40px;
+              text-align: justify
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      margin: 0;
+    }
+  }
+}
+
+.hideModel {
+  display: none
+}
+
+.showModel {
+  display: flex
+}
+@media screen and (min-width: 992px) {
+  .Model {
+    max-width: 750px;
+  }
+}

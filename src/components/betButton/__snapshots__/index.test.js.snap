@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BetButton base 1`] = `
+<div
+  class="default-bet-button"
+>
+  <span
+    class="up"
+  >
+    <span
+      class="iconfont icon-sheng"
+    />
+  </span>
+  <span
+    class="down"
+  >
+    <span
+      class="iconfont icon-jiang"
+    />
+  </span>
+  <div
+    class="wrapSp"
+  >
+    <span
+      class="sp"
+    />
+  </div>
+</div>
+`;
+
+exports[`BetButton disabledBtn 1`] = `
+<div
+  class="default-bet-button disabled"
+>
+  <span
+    class="up"
+  >
+    <span
+      class="iconfont icon-sheng"
+    />
+  </span>
+  <span
+    class="down"
+  >
+    <span
+      class="iconfont icon-jiang"
+    />
+  </span>
+  <div
+    class="wrapSp"
+  >
+    <span
+      class="lock"
+    >
+       
+      <span
+        class="iconfont icon-lock"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`BetButton prefixCls null 1`] = `
+<div
+  class="default-bet-button"
+>
+  <span
+    class="up"
+  >
+    <span
+      class="iconfont icon-sheng"
+    />
+  </span>
+  <span
+    class="down"
+  >
+    <span
+      class="iconfont icon-jiang"
+    />
+  </span>
+  <div
+    class="wrapSp"
+  >
+    <span
+      class="sp"
+    />
+  </div>
+</div>
+`;

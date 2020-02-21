@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Line base 1`] = `
+<div
+  class="row-line"
+/>
+`;
+
+exports[`Line prefixClsNull 1`] = `
+<div
+  class="row-line"
+/>
+`;

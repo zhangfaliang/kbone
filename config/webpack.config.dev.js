@@ -1,29 +1,29 @@
-'use strict';
+'use strict'
 
-const autoprefixer = require('autoprefixer');
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const getClientEnvironment = require('./env');
-const paths = require('./paths');
-const fileList = require('./entry');
+const autoprefixer = require('autoprefixer')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
+const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin')
+const eslintFormatter = require('react-dev-utils/eslintFormatter')
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
+const getClientEnvironment = require('./env')
+const paths = require('./paths')
+const fileList = require('./entry')
 
-const pjson = require('../package.json');
+const pjson = require('../package.json')
 
-let entry = {};
-let htmlWebpackPlugins = [];
+let entry = {}
+let htmlWebpackPlugins = []
 
-fileList.forEach(function (item) {
+fileList.forEach(function(item) {
   entry[item] = [
     require.resolve('./polyfills'),
     require.resolve('react-dev-utils/webpackHotDevClient'),
-    paths.appSrc + '/' + item + '.js',
-  ];
+    paths.appSrc + '/' + item + '.js'
+  ]
 
   htmlWebpackPlugins.push(
     new HtmlWebpackPlugin({
@@ -31,18 +31,19 @@ fileList.forEach(function (item) {
       chunks: [item],
       template: paths.appHtml,
       filename: item + '.html'
-    }));
-});
+    })
+  )
+})
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
-const publicPath = '/';
+const publicPath = '/'
 // `publicUrl` is just like `publicPath`, but we will provide it to our app
 // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
 // Omit trailing slash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
-const publicUrl = '';
+const publicUrl = ''
 // Get environment variables to inject into our app.
-const env = getClientEnvironment(publicUrl);
+const env = getClientEnvironment(publicUrl)
 
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
@@ -58,7 +59,7 @@ module.exports = {
   output: {
     // Add /* filename */ comments to generated require()s in the output.
     pathinfo: true,
-	path: paths.appBuild,
+    path: paths.appBuild,
     // This does not produce a real file. It's just the virtual path that is
     // served by WebpackDevServer in development. This is the JS bundle
     // containing code from all our entry points, and the Webpack runtime.
@@ -69,7 +70,7 @@ module.exports = {
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
     devtoolModuleFilenameTemplate: info =>
-      path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+      path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -94,8 +95,8 @@ module.exports = {
       // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
       // please link the files into your node_modules/ and let module-resolution kick in.
       // Make sure your source files are compiled, as they will not be processed in any way.
-      new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
-    ],
+      new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson])
+    ]
   },
   module: {
     strictExportPresence: true,
@@ -134,8 +135,8 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'static/media/[name].[hash:8].[ext]',
-            },
+              name: 'static/media/[name].[hash:8].[ext]'
+            }
           },
           // Process JS with Babel.
           {
@@ -143,55 +144,58 @@ module.exports = {
             //include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              "presets": [
-                "@babel/preset-env",
+              presets: [
+                '@babel/preset-env',
                 [
-                  "@babel/preset-react"
+                  '@babel/preset-react'
                   // {
                   //   "pragma": "h"
                   // }
                 ]
               ],
-              "plugins": [
-                "@babel/plugin-proposal-class-properties",
+              plugins: [
+                '@babel/plugin-proposal-class-properties',
                 [
-                  "@babel/plugin-proposal-decorators",
+                  '@babel/plugin-proposal-decorators',
                   {
-                    "legacy": true
+                    legacy: true
                   }
                 ],
-                "@babel/plugin-proposal-function-bind",
-                "@babel/plugin-proposal-object-rest-spread",
-                "@babel/plugin-syntax-dynamic-import"
+                '@babel/plugin-proposal-function-bind',
+                '@babel/plugin-proposal-object-rest-spread',
+                '@babel/plugin-syntax-dynamic-import'
                 // "styled-jsx/babel"
               ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
               // directory for faster rebuilds.
-              cacheDirectory: true,
-            },
+              cacheDirectory: true
+            }
           },
           {
             test: /[\\|\/]_[\S]*\.css$/,
-            use: [
-                'to-string-loader',
-                'css-loader'
-            ]
+            use: ['to-string-loader', 'css-loader']
           },
           {
             test: /[\\|\/]_[\S]*\.less$/,
-            use: [
-                'to-string-loader',
-                'css-loader',
-                'less-loader'
-            ]
+            use: ['to-string-loader', 'css-loader', 'less-loader']
           },
           {
             test: /\.less$/,
             use: [
-                'style-loader',
-                'css-loader',
-                'less-loader'
+              require.resolve('style-loader'),
+              {
+                loader: require.resolve('css-loader'),
+                options: {
+                  modules: true
+                }
+              },
+              {
+                loader: require.resolve('less-loader'),
+                options: {
+                  modules: true
+                }
+              }
             ]
           },
           // "postcss" loader applies autoprefixer to our CSS.
@@ -207,7 +211,8 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
-                },
+                  modules: true
+                }
               },
               {
                 loader: require.resolve('postcss-loader'),
@@ -222,14 +227,14 @@ module.exports = {
                         '>1%',
                         'last 4 versions',
                         'Firefox ESR',
-                        'not ie < 9', // React doesn't support IE8 anyway
+                        'not ie < 9' // React doesn't support IE8 anyway
                       ],
-                      flexbox: 'no-2009',
-                    }),
-                  ],
-                },
-              },
-            ],
+                      flexbox: 'no-2009'
+                    })
+                  ]
+                }
+              }
+            ]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
@@ -244,14 +249,14 @@ module.exports = {
             exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
             loader: require.resolve('file-loader'),
             options: {
-              name: 'static/media/[name].[hash:8].[ext]',
-            },
-          },
-        ],
-      },
+              name: 'static/media/[name].[hash:8].[ext]'
+            }
+          }
+        ]
+      }
       // ** STOP ** Are you adding a new loader?
       // Make sure to add the new loader(s) before the "file" loader.
-    ],
+    ]
   },
   plugins: [
     // Makes some environment variables available in index.html.
@@ -294,7 +299,7 @@ module.exports = {
     // solution that requires the user to opt into importing specific locales.
     // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     // You can remove this if you don't use Moment.js:
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
@@ -303,13 +308,13 @@ module.exports = {
     fs: 'empty',
     net: 'empty',
     tls: 'empty',
-    child_process: 'empty',
+    child_process: 'empty'
   },
   // Turn off performance hints during development because we don't do any
   // splitting or minification in interest of speed. These warnings become
   // cumbersome.
   performance: {
-    hints: false,
+    hints: false
   },
   mode: 'development'
-};
+}

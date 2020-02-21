@@ -1,0 +1,18 @@
+.default-horse-race-info-cell {
+  display: flex;
+  justify-content: flex-start;
+  width: 710px;
+  height: 100px;
+  flex-flow: row nowrap;
+  background: #FFFFFF;
+  box-sizing: border-box;
+ // border-top: 1PX solid #D7DAE0;
+
+}
+
+.single-horse-race-info-cell {
+  &:extend(.default-horse-race-info-cell all);
+  height: 148px;
+  border-top: 0.01rem solid #D7DAE0;
+
+}

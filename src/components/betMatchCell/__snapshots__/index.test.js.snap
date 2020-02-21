@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`betMatchCell  toJson  BetButtonCell  1`] = `
+<div
+  class="push-inplay-bet-cell"
+>
+  <div
+    class="wrap"
+  >
+    <div
+      class="nameOrScore"
+    >
+      <span
+        class="name"
+      >
+        678
+      </span>
+      <span
+        class="score"
+      >
+        34 
+      </span>
+    </div>
+    <div
+      class="nameOrScore"
+    >
+      <span
+        class="name"
+      >
+        34
+      </span>
+      <span
+        class="score"
+      >
+        34
+      </span>
+    </div>
+    <div
+      class="bottom"
+    >
+      <span
+        class="live"
+      >
+        LIVE
+      </span>
+      <span
+        class="time"
+      >
+        werwerwer
+      </span>
+    </div>
+  </div>
+  <div
+    class="push-inplay-betButtonCell"
+  >
+    <div
+      class="default-bet-button"
+    >
+      <span
+        class="up"
+      >
+        <span
+          class="iconfont icon-sheng"
+        />
+      </span>
+      <span
+        class="down"
+      >
+        <span
+          class="iconfont icon-jiang"
+        />
+      </span>
+      <div
+        class="wrapSp"
+      >
+        <span
+          class="sp"
+        />
+      </div>
+    </div>
+    <div
+      class="row-line"
+    />
+  </div>
+</div>
+`;
+
+exports[`betMatchCell  toJson ProgressText 1`] = `
+<div
+  class="push-inplay-bet-cell"
+>
+  <div
+    class="wrap"
+  >
+    <div
+      class="nameOrScore"
+    >
+      <span
+        class="name"
+      >
+        678
+      </span>
+      <span
+        class="score"
+      >
+        34 
+      </span>
+    </div>
+    <div
+      class="nameOrScore"
+    >
+      <span
+        class="name"
+      >
+        34
+      </span>
+      <span
+        class="score"
+      >
+        34
+      </span>
+    </div>
+    <div
+      class="bottom"
+    >
+      <span
+        class="live"
+      >
+        LIVE
+      </span>
+      <span
+        class="time"
+      >
+        werwerwer
+      </span>
+    </div>
+  </div>
+  <div
+    class="progress"
+  >
+    <span
+      class="text"
+    >
+      ewrwe
+    </span>
+    <span
+      class="stringInTime"
+    >
+      werwer
+    </span>
+  </div>
+</div>
+`;

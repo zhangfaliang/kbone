@@ -1,0 +1,34 @@
+@import '../../theme/index.less';
+
+.bet-toast {
+  position: fixed;
+  z-index: @zindex-betToast;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  box-sizing: border-box;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    font-size: 32px;
+    color: #ffffff;
+    background: #333333;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bet-toast {
+    width: 750px;
+    left: 50%;
+    margin-left: -375px;
+  }
+}

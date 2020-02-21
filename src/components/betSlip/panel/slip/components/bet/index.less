@@ -1,0 +1,91 @@
+.contw {
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+ 
+  .minBetLimitTxt {
+    color: #E13900;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .con {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 24px 0;
+    border-bottom: 1px #D8D8D8 solid;
+  }
+
+  &:last-child{
+    .con{
+      border-bottom: 0;
+    }
+  }
+
+  :global {
+    .bein {
+      transition: .35s;
+      flex: 1;
+      position: relative;
+      .bein_span{
+        position: absolute;
+        width: 12px;
+        height: 50px;
+        background: #3D6BFA;
+        border-radius: 0 100px 100px 0;
+        top: 50%;
+        margin-top: -25px;
+        left: -24px;
+      }
+    }
+
+    .bein_del {
+      display: flex;
+      transition: .35s;
+      // margin-left: -68px;
+      align-items: center;
+      img {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+
+  &.showDel {
+    :global {
+      .bein_del {
+        transition: .35s;
+        // margin-left: 0;
+      }
+
+      .bein {
+        transition: .35s;
+      }
+    }
+  }
+}
+
+.repeatCls {
+  background: #162D49;
+  height: 100px;
+  padding: 0 53px 0 20px;
+  display: flex;
+  align-items: center;
+
+  span {
+    width: 6px;
+    height: 60px;
+    background: #FFE011;
+    margin-right: 27px;
+  }
+
+  div {
+    font-family: Akrobat-Regular;
+    font-size: 28px;
+    color: #8FB8DF;
+  }
+}

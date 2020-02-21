@@ -1,0 +1,66 @@
+@import '../../../theme/index.less';
+
+.wrapper {
+  height: 224px;
+  padding: @v-p-20 @h-p-20;
+  background: url(../../../assets/guide/loginGroupBg.png) no-repeat center;
+  background-size: cover;
+}
+.title {
+  font-size: @primary-footer-font-size;
+  padding-left: @h-p-20;
+  margin: 8px 0 @v-m-20 0;
+}
+.titleBeforeLogin {
+  margin: 8px 0 55px 0;
+}
+.beforeLogin {
+  display: flex;
+  justify-content: space-between;
+  & > a {
+    width: 346px;
+    height: 80px;
+    margin: 0;
+    &:last-child {
+      background: @primary-base-color !important;
+      color: #fff;
+    }
+  }
+}
+
+.afterLogin {
+  .beforeLogin;
+  height: 116px;
+  padding: @v-p-20 @h-p-20;
+  border-radius: 8px;
+  // background: @aide-color;
+  background: @match-group-bg;
+  & > div {
+    width: 50%;
+  }
+}
+.afterLoginLeft {
+  & > div:first-child {
+    font-size: @base-font-size;
+  }
+  & > div:last-child {
+    margin-top: 12px;
+    font-size: @aide-bet-font-size;
+    & > span {
+      font-size: @primary-tab-font-size-secondary;
+    }
+  }
+}
+
+.afterLoginRight {
+  .beforeLogin;
+  justify-content: flex-end;
+  align-items: center;
+  & > a {
+    width: 144px;
+    height: 60px;
+    &:last-child {
+      margin-left: @h-p-20;
+    }
+  }
+}

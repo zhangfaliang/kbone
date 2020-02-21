@@ -1,0 +1,228 @@
+.default {
+  >div {
+    height: 80px;
+    background: #F4F4F5;
+    border-radius: 24px 24px 0 0;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #212934;
+    letter-spacing: 0;
+    line-height: 80px;
+
+    >div {
+      &:first-child {
+        background-repeat: no-repeat;
+        background-size: 36px;
+        padding-left: 56px;
+        background-position: 0 center;
+      }
+    }
+  }
+}
+
+// .bgcolorYellow {
+//   background-color: #FDD329;
+// }
+
+// .bgcolorWhite {
+//   background-color: #fff;
+// }
+.bgcolor {
+  &Yellow {
+    background-color: #FDD329;
+  }
+
+  &White {
+    background-color: #fff;
+  }
+}
+
+// .sport1 {
+//   background-image: url(@/assets/favorites/s02/football.png)
+// }
+
+// .sport2 {
+//   background-image: url(@/assets/favorites/s02/basketball.png)
+// }
+
+// .sport4 {
+//   background-image: url(@/assets/favorites/s02/tennis.png)
+// }
+
+.sport {
+  &1 {
+    background-image: url(@/assets/favorites/s02/football.png);
+  }
+
+  &2 {
+    background-image: url(@/assets/favorites/s02/basketball.png)
+  }
+
+  &4 {
+    background-image: url(@/assets/favorites/s02/tennis.png)
+  }
+}
+
+// .sportsDetail {
+//   background-color: #F4F4F5;
+
+//   .sportsContents {
+//     // display: flex;
+//     position: relative;
+
+//     >div {
+//       &:nth-child(1) {
+//         // max-width: 302px;
+//         // width: 302px;
+
+//         .leagueName {
+//           height: 80px;
+//           padding-left: 24px;
+//           font-family: PingFangSC-Regular;
+//           font-size: 28px;
+//           color: #3D6BFA;
+//           letter-spacing: 0;
+//           line-height: 80px;
+//         }
+
+//         .teamInformation,
+//         .teamInformationfirst {
+//           // padding-top: 12px;
+//           // padding-left: 24px;
+//           // padding-bottom: 20px;
+//           padding: 12px 0 20px 24px;
+//           // 总高 296px
+//           background-color: #fff;
+
+//           >div {
+//             height: 88px;
+//             font-family: PingFangSC-Regular;
+//             font-size: 28px;
+//             color: #212934;
+//             display: flex;
+//             align-items: center;
+//             padding-right: 24px;
+//             justify-content: space-between;
+
+
+//           }
+//         }
+
+//         .teamInformationfirst {
+//           border-radius: 24px 24px 0 0;
+//         }
+
+//       }
+//     }
+
+//   }
+// }
+
+// .item {
+//   width: calc(100vw*(278/750));
+
+//   >div {
+//     &:first-child {
+//       // max-width: 172px;
+//       // width: 172px;
+//       width: calc(100vw*(172/750));
+//       display: -webkit-box;
+//       -webkit-box-orient: vertical;
+//       -webkit-line-clamp: 2;
+
+//       text-overflow: ellipsis;
+//       overflow: hidden;
+//       /* autoprefixer: off */
+//       -webkit-box-orient: vertical;
+//       /* autoprefixer: on */
+//       /*因为代码环境的关系-webkit-box-orient被过滤掉了 autoprefixer 这个关键字可以免除被过滤的动作*/
+//       word-wrap: break-word;
+//       word-break: break-all;
+//     }
+
+//     &:nth-child(2) {
+//       // width: px;
+//       font-family: SFUIDisplay-Semibold;
+//       font-size: 30px;
+//       color: #212934;
+//       letter-spacing: 0;
+//       text-align: right;
+//     }
+//   }
+// }
+
+// .itemHandle {
+//   // max-width: 302px;
+//   // width: 302px;
+//   width: calc(100vw*(278/750));
+//   display: flex;
+//   flex-direction: column;
+
+//   >div {
+//     width: 100%;
+
+//     &:first-child {
+//       img {
+//         width: 64px;
+//         height: 32px;
+//       }
+
+//       text-align: left;
+//     }
+//   }
+// }
+
+// .more {
+//   background: #3D6BFA;
+//   border-radius: 27px;
+//   width: 140px;
+//   height: 32px;
+//   // padding: 3.6px 11px 4.4px;
+//   font-family: SFUIText-Semibold;
+//   font-size: 20px;
+//   color: #FFFFFF;
+//   // text-align: center;
+//   line-height: 32px;
+//   display: block;
+//   padding-left: 11px;
+//   background-image: url(@/assets/favorites/s02/left.png);
+//   background-repeat: no-repeat;
+//   background-position: 120px center;
+//   background-size: 12px 24px;
+
+// }
+
+// .left {
+//   width: calc(100vw - 100vw*(326/750));
+//   // border: 1px solid red;
+//   overflow-x: scroll;
+//   -webkit-border-radius: 0 0 0.05rem 0.05rem;
+//   border-radius: 0 0 0.05rem 0.05rem;
+//   -webkit-overflow-scrolling: touch;
+//   height: 100%;
+//   overflow-y: hidden;
+//   padding-bottom: 0.2rem;
+//   background: transparent;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+
+//   &::-webkit-scrollbar {
+//     background-color: transparent;
+//     display: none;
+//   }
+// }
+
+// .times {
+//   font-family: SFUIText-Regular;
+//   font-size: 24px;
+//   color: #7A7F85;
+//   letter-spacing: 0;
+//   position: relative;
+//   top: -6px;
+
+// }

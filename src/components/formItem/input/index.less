@@ -1,0 +1,22 @@
+@import '../../../theme/index.less';
+
+.default {
+  box-sizing: border-box;
+  width: 100%;
+  // height: @base-input-height;
+  height: 128px;
+  font-size: @primary-defalut-font-size;
+  line-height: @primary-defalut-font-size;
+  letter-spacing: 0.34px;
+  border: 0;
+  // padding: 0 @h-p-20;
+  // color: @primary-font-color;
+  outline: none;
+  font-family: 'Akrobat-Regular';
+  &::-webkit-input-placeholder {
+    font-family: 'Akrobat-Regular';
+    color: @remark-font-color;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+}

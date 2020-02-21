@@ -1,0 +1,215 @@
+@import '../../theme/index.less';
+@iconFontHeight: 76px;
+.default-panel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap column;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: @tab-bar-height;
+    padding-right: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid @tab-bar-border-color;
+    .text {
+      margin-left: 20px;
+      font-size: @base-font-size;
+      color: #ffffff;
+    }
+    .iconFont {
+      height: @iconFontHeight;
+      width: @iconWidth;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(90deg);
+      transform-origin: center;
+      transition: rotate 0.3s ease-in;
+      > span:before {
+        color: @aide-color-secondary;
+      }
+    }
+  }
+  .children {
+    height: 0;
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: overflow 0.5s ease-in 0.1s;
+  }
+  &.show {
+    .title {
+      border-bottom: none;
+      .iconFont {
+        transform-origin: center;
+        transform: rotate(-90deg);
+      }
+    }
+    .children {
+      height: auto;
+      opacity: 1;
+    }
+  }
+}
+
+.default-accordion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap column;
+  width: 100%;
+}
+
+.default-right-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: @iconFontHeight;
+  width: @iconWidth;
+  margin-right: 36px;
+  > span:before {
+    color: @detail-panela-stick-icon;
+  }
+}
+
+.default-detail-panel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap column;
+  background: @detail-panel-bg-color;
+  // border-radius: 8px;
+  overflow: hidden;
+  // margin-bottom: 20px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: @tab-bar-height;
+    width: 100%;
+    border-bottom: 1px solid @tab-bar-border-color;
+    .titleLife {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      .leftIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: @iconFontHeight;
+        width: @iconWidth;
+        margin-right: 8px;
+        > span:before {
+          color: rgba(159, 159, 159);
+          text-indent: -6px;
+        }
+      }
+      .leftText {
+        font-size: @base-font-size;
+        color: @remark-font-color;
+        margin-left: 10px;
+        &.leftTextP12 {
+          margin-left: 20px;
+        }
+      }
+    }
+    .titleRight {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .foldIcon {
+        &:extend(.default-right-icon all);
+        > span {
+          font-size: 39px;
+        }
+        margin-right: 10px;
+        transform: rotate(90deg);
+      }
+      .activeFoldIcon {
+        transform: rotate(-90deg);
+      }
+      .stickIcon {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        background-image: url('../../assets/game/detail/未选@3x.png');
+        background-size: cover;
+        transform: translatex(14px);
+      }
+      .activeStickIcon {
+        background-image: url('../../assets/game/detail/选中@3x.png');
+      }
+    }
+  }
+  .children {
+    height: 0;
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s ease-in 0.1s;
+  }
+  &.show {
+    .title {
+      border-bottom: none;
+      .iconFont {
+        transform-origin: center;
+        transform: rotate(-90deg);
+      }
+    }
+    .children {
+      height: auto;
+      opacity: 1;
+    }
+  }
+}
+
+.s02-detail-panel {
+  &:extend(.default-detail-panel all);
+  // .children{
+  //   div{
+  //     div:last-child{
+  //       margin:0 !important;
+  //     }
+  //   }
+
+  // }
+  margin-top: -10px;
+  box-sizing: border-box;
+  .title {
+    .titleLife {
+      .leftIcon {
+        background-image: url('../../assets/game/detail/玩法说明图标@3x.png');
+        background-size: cover;
+        height: 48px;
+        width: 48px;
+        margin-right: 4px;
+        transform: translatex(-10px);
+      }
+      .leftText {
+        margin: 0;
+        &.leftTextP12 {
+          margin: 0;
+        }
+      }
+    }
+    .titleRight {
+      .stickIcon {
+        &:extend(.default-right-icon all);
+        margin-right: 0;
+      }
+      .activeStickIcon {
+        > span:before {
+          color: @detail-panel-active-stick-icon;
+        }
+      }
+    }
+  }
+}

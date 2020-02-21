@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorseRaceNum base 1`] = `
+<div
+  class="default-horse-race-num"
+>
+  <span
+    class="num"
+  >
+    1
+  </span>
+  <span
+    class="num"
+  >
+    1
+  </span>
+  <span
+    class="num"
+  >
+    1
+  </span>
+  <span
+    class="num"
+  >
+    1
+  </span>
+</div>
+`;

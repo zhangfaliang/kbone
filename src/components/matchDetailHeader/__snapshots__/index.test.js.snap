@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MatchDetailHeater base 1`] = `
+<div
+  class="default-match-detail-header"
+>
+  <div
+    class="left"
+  >
+    <span
+      class="leftIcon"
+    >
+      <span
+        class="iconfont icon-mycopy"
+      />
+    </span>
+    <span
+      class="leftText"
+    >
+      NBA
+    </span>
+  </div>
+  <div
+    class="right"
+  >
+    <span
+      class="rigthIcon activeIcon"
+    >
+      <span
+        class="iconfont icon-bisaixinxi"
+      />
+    </span>
+    <span
+      class="rigthIcon"
+    >
+      <span
+        class="iconfont icon-shikuangxinxicopy"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`MatchDetailHeater centerText 1`] = `
+<div
+  class="default-match-detail-header"
+>
+  <div
+    class="left"
+  >
+    <span
+      class="leftIcon"
+    >
+      <span
+        class="iconfont icon-mycopy"
+      />
+    </span>
+    <span
+      class="leftText"
+    >
+      NBA
+    </span>
+  </div>
+  <span
+    class="center"
+  >
+    sdfjsd
+  </span>
+  <div
+    class="right"
+  >
+    <span
+      class="rigthIcon activeIcon"
+    >
+      <span
+        class="iconfont icon-bisaixinxi"
+      />
+    </span>
+    <span
+      class="rigthIcon"
+    >
+      <span
+        class="iconfont icon-shikuangxinxicopy"
+      />
+    </span>
+  </div>
+</div>
+`;

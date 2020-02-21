@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorseRaceBetButtonCell HorseRaceBetButtonCell 1`] = `
+<div
+  class="default-horse-race-bet-btn-cell"
+/>
+`;
+
+exports[`HorseRaceBetButtonCell base 1`] = `
+<div
+  class="default-horse-race-bet-btn-cell"
+>
+  <div
+    class="test withdraw-tir-horse-race-bet-btn"
+  >
+    <span
+      class="odds"
+    >
+      6.7
+    </span>
+  </div>
+</div>
+`;
+
+exports[`HorseRaceBetButtonCell prefixCls 1`] = `
+<div
+  class="default-horse-race-bet-btn-cell"
+>
+  <div
+    class="test withdraw-tir-horse-race-bet-btn"
+  >
+    <span
+      class="odds"
+    >
+      6.7
+    </span>
+  </div>
+</div>
+`;

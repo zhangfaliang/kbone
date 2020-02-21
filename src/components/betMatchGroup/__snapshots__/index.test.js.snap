@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`betMatchGroup test HorseLabel 1`] = `
+<div
+  class="horse-label"
+>
+  <span
+    class="text button"
+  >
+    23
+  </span>
+</div>
+`;
+
+exports[`betMatchGroup test toJson 1`] = `
+<div
+  class="default-bet-match-group"
+>
+  <div
+    class="default-label"
+  >
+    <div
+      class="default-left-title"
+    >
+      <img
+        alt=""
+        class="gameTypeImg"
+        src="https://avatars3.githubusercontent.com/u/17559536?s=40&v=4"
+      />
+      <span
+        class="titleText"
+      />
+    </div>
+    <div
+      class="default-right-table"
+    />
+    <img
+      alt=".."
+      class="default-result-img"
+    />
+  </div>
+  <div
+    class="push-inplay-bet-cell"
+  >
+    <div
+      class="wrap"
+    >
+      <div
+        class="nameOrScore"
+      >
+        <span
+          class="name"
+        >
+          Villacher Sv
+        </span>
+      </div>
+      <div
+        class="nameOrScore"
+      >
+        <span
+          class="name"
+        >
+          Greifenburg
+        </span>
+      </div>
+      <div
+        class="bottom"
+      >
+        <span
+          class="live"
+        >
+          LIVE
+        </span>
+        <span
+          class="time"
+        >
+          4th set 10'
+        </span>
+      </div>
+    </div>
+    <div
+      class="push-inplay-betButtonCell"
+    >
+      <div
+        class="default-bet-button"
+      >
+        <span
+          class="up"
+        >
+          <span
+            class="iconfont icon-sheng"
+          />
+        </span>
+        <span
+          class="down"
+        >
+          <span
+            class="iconfont icon-jiang"
+          />
+        </span>
+        <div
+          class="wrapSp"
+        >
+          <span
+            class="sp"
+          />
+        </div>
+      </div>
+      <div
+        class="row-line"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`betMatchGroup test toJson BeforeMatchCellGroup 1`] = `
+<div
+  class="default-bet-match-group"
+>
+  <div
+    class="default-label showTBBorder"
+  >
+    <div
+      class="default-left-title"
+    >
+      <img
+        alt=""
+        class="gameTypeImg"
+        src="https://avatars3.githubusercontent.com/u/17559536?s=40&v=4"
+      />
+      <span
+        class="titleText"
+      />
+    </div>
+  </div>
+  <div
+    class="before-match-cell-group"
+  >
+    <div
+      class="push-before-label"
+    >
+      <div
+        class="push-before-left-title"
+      >
+        <span
+          class="titleText"
+        />
+      </div>
+      <div
+        class="push-before-right-table"
+      />
+    </div>
+    <div
+      class="push-inplay-bet-cell"
+    >
+      <div
+        class="wrap"
+      >
+        <div
+          class="nameOrScore"
+        >
+          <span
+            class="name"
+          >
+            Villacher Sv
+          </span>
+        </div>
+        <div
+          class="nameOrScore"
+        >
+          <span
+            class="name"
+          >
+            Greifenburg
+          </span>
+        </div>
+        <div
+          class="bottom"
+        >
+          <span
+            class="live"
+          >
+            LIVE
+          </span>
+          <span
+            class="time"
+          >
+            4th set 10'
+          </span>
+        </div>
+      </div>
+      <div
+        class="push-inplay-betButtonCell"
+      >
+        <div
+          class="default-bet-button"
+        >
+          <span
+            class="up"
+          >
+            <span
+              class="iconfont icon-sheng"
+            />
+          </span>
+          <span
+            class="down"
+          >
+            <span
+              class="iconfont icon-jiang"
+            />
+          </span>
+          <div
+            class="wrapSp"
+          >
+            <span
+              class="sp"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

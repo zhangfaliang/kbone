@@ -1,0 +1,129 @@
+.warp {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+  height: auto;
+  flex-shrink: 0;
+  &::after {
+    position: relative;
+    content: '';
+    left: 24px;
+    bottom: -15px;
+    width: 702px;
+    border: 1px solid #d8d8d8;
+  }
+}
+
+.title {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 24px;
+  box-sizing: border-box;
+  .text {
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #212934;
+  }
+  .icon {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-image: url('../../assets/leaguesScreen/no-choose.png');
+    background-size: cover;
+  }
+  .activeIcon {
+    background-image: url('../../assets/leaguesScreen/active-choose.png');
+  }
+}
+
+.leaguesNameGroup {
+  padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  div {
+    margin-bottom: 10px;
+  }
+}
+
+.leaguesNameBtn {
+  height: 88px;
+  width: 346px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #f5f7ff;
+  border-radius: 12px;
+  font-family: SFUIDisplay-Regular;
+  font-size: 26px;
+  color: #212934;
+
+  &.active {
+    background-image: linear-gradient(-45deg, #1c232d 0%, #384153 100%);
+    font-family: PingFangSC-Regular;
+    color: #ffffff;
+  }
+}
+
+.bottom {
+  width: 100%;
+  height: 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 0 44px;
+  box-sizing: border-box;
+  .but {
+    width: 514px;
+    height: 98px;
+    background: #fdd329 !important;
+    border-radius: 24px;
+    font-family: PingFangSC-Regular;
+    font-size: 36px;
+    color: #212934;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 !important;
+  }
+}
+.radioWrap {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .radio {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-image: url('../../assets/leaguesScreen/no-choose.png');
+    background-size: cover;
+  }
+  .radioText {
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #7a7f85;
+    letter-spacing: 0;
+    text-align: center;
+    margin-left: 16px;
+  }
+  &.active {
+    .radio {
+      background-image: url('../../assets/leaguesScreen/active-choose.png');
+    }
+    .radioText {
+      color: #212934;
+    }
+  }
+}

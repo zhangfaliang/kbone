@@ -1,0 +1,40 @@
+.title{
+  height: 80px;
+  border-bottom: 1px solid #284971;
+  border-top: 1px solid #284971;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  >div {
+    &:first-child {
+      >div{
+        display: flex;
+        align-items: center;
+        >span{
+          &:nth-child(2){
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+ .show {
+   display: block;
+   padding:0 20px;
+ }
+
+ .hidden {
+   display: none;
+ }
+.deg90 {
+  transform: rotate(-90deg);
+  color: #8FB8DF
+}
+
+.deg270 {
+  transform: rotate(90deg);
+  color: #8FB8DF
+}

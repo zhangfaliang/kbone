@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BetMatchInfo base 1`] = `
+<div
+  class="wrap"
+>
+  <div
+    class="nameOrScore"
+  >
+    <span
+      class="name"
+    >
+      Villacher Sv
+    </span>
+  </div>
+  <div
+    class="nameOrScore"
+  >
+    <span
+      class="name"
+    >
+      Greifenburg
+    </span>
+  </div>
+  <div
+    class="bottom"
+  >
+    <span
+      class="live"
+    >
+      LIVE
+    </span>
+    <span
+      class="time"
+    >
+      4th set 10'
+    </span>
+  </div>
+</div>
+`;

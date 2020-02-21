@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VerticalItem VerticalItem 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="title"
+  >
+    <span>
+       222 
+    </span>
+    <span
+      class="iconColor"
+    >
+      <span
+        class="iconfont icon-mycopy"
+      />
+    </span>
+  </div>
+  <div
+    class="item"
+  >
+    <div
+      class="defaultImg backgroundColor"
+    >
+      <img
+        alt="Player Logo"
+        src="http:123.png"
+      />
+    </div>
+    <div>
+      <div>
+        111
+      </div>
+      <div>
+        222
+      </div>
+    </div>
+    <div
+      class="nochecked"
+    >
+      2
+    </div>
+  </div>
+  <div
+    class="item"
+  >
+    <div
+      class="defaultImg backgroundColor"
+    >
+      <img
+        alt="Player Logo"
+        src="[object Object]"
+      />
+    </div>
+    <div>
+      <div>
+        111
+      </div>
+      <div>
+        222
+      </div>
+    </div>
+    <div
+      class="nochecked"
+    >
+      2
+    </div>
+  </div>
+  <div
+    class="item"
+  >
+    <div
+      class="defaultImg backgroundColor"
+    >
+      <img
+        alt="Player Logo"
+        src="[object Object]"
+      />
+    </div>
+    <div>
+      <div>
+        111
+      </div>
+      <div>
+        222
+      </div>
+    </div>
+    <div
+      class="nochecked"
+    >
+      13
+    </div>
+  </div>
+</div>
+`;

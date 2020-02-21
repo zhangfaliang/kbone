@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`horseRaceBetButton base 1`] = `
+<div
+  class="middle-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton disabled 1`] = `
+<div
+  class="test withdraw-tir-horse-race-bet-btn disabled"
+>
+  <span
+    class="betText"
+  >
+    456
+  </span>
+  <div
+    class="historySp"
+  >
+    <span>
+      1
+    </span>
+    <span>
+      3
+    </span>
+    <span>
+      4
+    </span>
+  </div>
+</div>
+`;
+
+exports[`horseRaceBetButton isErrorSelect 1`] = `
+<div
+  class="test withdraw-tir-horse-race-bet-btn isErrorSelect"
+>
+  <span
+    class="odds"
+  >
+    6.7
+  </span>
+</div>
+`;
+
+exports[`horseRaceBetButton isHide 1`] = `
+<div
+  class="test withdraw-tir-horse-race-bet-btn disabled"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls default 1`] = `
+<div
+  class="default-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls null 1`] = `
+<div
+  class="null-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls sp 1`] = `
+<div
+  class="sp-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls withdraw-fore 1`] = `
+<div
+  class="withdraw-fore-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls withdraw-fore-any 1`] = `
+<div
+  class="withdraw-fore-any-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls withdraw-tir 1`] = `
+<div
+  class="withdraw-tir-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton prefixCls withdraw-tir-any 1`] = `
+<div
+  class="withdraw-tir-any-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  />
+</div>
+`;
+
+exports[`horseRaceBetButton 正常处理 1`] = `
+<div
+  class="test withdraw-tir-horse-race-bet-btn"
+>
+  <span
+    class="odds"
+  >
+    6.7
+  </span>
+</div>
+`;

@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorseRaceInfoGroup HorseRaceInfoGroup 1`] = `
+<div
+  class="default-horse-race-info-group"
+>
+  <div
+    class="single-horse-race-info-group-title"
+  >
+    <span
+      class="empty"
+    />
+    <span
+      class="label"
+    >
+      info
+    </span>
+    <span
+      class="text"
+    />
+  </div>
+  <div
+    class="single-horse-race-info-cell"
+  >
+    <div
+      class="single-horse-info"
+    >
+      <div
+        class="leftInfo"
+      >
+        <div
+          class="top"
+        >
+          <div
+            class="left"
+          >
+            <div
+              class="single-horse-num"
+            />
+            <div
+              class="single-horse-track-num"
+            />
+          </div>
+          <img
+            alt=""
+            class="single-horse-img"
+            src="[object Object]"
+          />
+        </div>
+        <div
+          class="single-horse-historical-record"
+        />
+      </div>
+      <div
+        class="rightInfo"
+      >
+        <div
+          class="single-horse-name"
+        />
+        <div
+          class="horseman"
+        >
+          <span />
+           
+          <span>
+            / 
+          </span>
+          <span />
+        </div>
+        <div>
+          <span
+            class="age"
+          >
+             
+          </span>
+          <span
+            class="weight"
+          >
+            100
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="fore-or-tri-horse-info"
+    >
+      <div
+        class="fore-or-tri-horse-num"
+      />
+      <div
+        class="fore-or-tri-horse-name"
+      />
+    </div>
+    <div
+      class="default-sp-info"
+    />
+    <div
+      class="default-horse-race-bet-btn-cell"
+    >
+      <div
+        class="middle-horse-race-bet-btn"
+      >
+        <span
+          class="betText"
+        />
+        <span
+          class="odds"
+        />
+        <div
+          class="historySp"
+        >
+          <span>
+            1
+          </span>
+          <span>
+            3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="finish-label"
+    >
+      <div
+        class="left"
+      >
+        <div
+          class="finish-horse-num"
+        />
+        <div
+          class="finish-horse-name"
+        />
+      </div>
+      <div
+        class="right"
+      >
+        <span>
+          5.6 
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="default-no-runners"
+  >
+    <span
+      class="noRunText"
+    />
+    <span
+      class="noRunner"
+    >
+      1
+    </span>
+    <span
+      class="noRunner"
+    >
+      2
+    </span>
+    <span
+      class="noRunner"
+    >
+      3
+    </span>
+  </div>
+</div>
+`;
+
+exports[`HorseRaceInfoGroup Title 1`] = `
+<div
+  class="single-horse-race-info-group-title"
+>
+  <span
+    class="label"
+  >
+    info
+  </span>
+  <span
+    class="text"
+  />
+</div>
+`;

@@ -1,0 +1,55 @@
+.wrapper {
+  width: 100%;
+  touch-action: none;
+  .bannerImg {
+    position: relative;
+    background-size: 750px 320px;
+    background-repeat: no-repeat;
+    height: 320px !important;
+    width: 100%;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      content: '';
+      height: 320px !important;
+      width: 100%;
+      background-image: linear-gradient(180deg, rgba(250, 194, 83, 0) 75%, #fdd329 100%);
+       transform: translateY(1px);
+     
+    }
+  }
+  // .line {
+  //   display: inline-block;
+  //   height: 320px;
+  //   width: 100%;
+  //   background-image: linear-gradient(180deg, rgba(250, 194, 83, 0) 75%, #fdd329 100%);
+  //   transform: translateY(7px);
+  // }
+
+  :global {
+    .am-carousel-wrap {
+      text-align: right;
+      padding-right: 24px;
+      padding-bottom: 10px;
+      .am-carousel-wrap-dot {
+        span {
+          display: inline-block;
+          width: 20px;
+          height: 8px;
+          background: #212934;
+          opacity: 0.4;
+          border-radius: 4px;
+        }
+      }
+      .am-carousel-wrap-dot-active {
+        span {
+          display: inline-block;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.sportsDetail {
+  background-color: #F4F4F5;
+
+  .sportsContents {
+    position: relative;
+    overflow-y: hidden;
+
+    >div {
+      &:nth-child(1) {
+        .leagueName {
+          font-family: PingFangSC-Regular;
+          font-size: 28px;
+          color: #3D6BFA;
+          letter-spacing: 0;
+          background-color: #fff;
+
+          >div {
+            border-radius: 24px 24px 0 0;
+            background-color: #F4F4F5;
+            display: flex;
+            align-items: center;
+            height: 80px;
+
+            >div {
+              margin-left: 24px;
+              width: 274px;
+              word-wrap: break-word;
+              word-break: break-all;
+              line-height: 32px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+
+              text-overflow: ellipsis;
+              overflow: hidden;
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+              /* autoprefixer: on */
+              /*因为代码环境的关系-webkit-box-orient被过滤掉了 autoprefixer 这个关键字可以免除被过滤的动作*/
+            }
+          }
+        }
+
+        .teamInformation,
+        .teamInformationfirst {
+          padding: 7px 0 20px 24px;
+          // 总高 296px
+          background-color: #fff;
+          position: relative;
+
+          >div {
+            height: 98px;
+            font-family: PingFangSC-Regular;
+            font-size: 28px;
+            color: #212934;
+            display: flex;
+            align-items: center;
+            padding-right: 24px;
+            justify-content: space-between;
+          }
+        }
+
+        .teamInformationfirst {
+          border-radius: 24px 24px 0 0;
+          position: relative;
+        }
+
+      }
+    }
+
+  }
+}
+
+.item {
+  width: calc(100vw*(298/750));
+
+  >div {
+    &:first-child {
+      width: calc(100vw*(172/750));
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+
+      text-overflow: ellipsis;
+      overflow: hidden;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+      /*因为代码环境的关系-webkit-box-orient被过滤掉了 autoprefixer 这个关键字可以免除被过滤的动作*/
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+
+    &:nth-child(2) {
+      // width: px;
+      font-family: SFUIDisplay-Semibold;
+      font-size: 30px;
+      color: #212934;
+      letter-spacing: 0;
+      text-align: right;
+      font-weight: bolder;
+    }
+  }
+}
+
+.itemHandle {
+  // max-width: 302px;
+  // width: 302px;
+  width: calc(100vw*(278/750));
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 2px;
+
+  >div {
+    width: 100%;
+
+    &:first-child {
+      img {
+        width: 64px;
+        height: 32px;
+        position: relative;
+        top: 3px;
+      }
+
+      text-align: left;
+    }
+
+    &:nth-child(2) {
+      // 收藏
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+
+      >div {
+        position: absolute;
+        top: -24px;
+        right: -28px;
+      }
+    }
+  }
+}
+
+.more {
+  background: #3D6BFA;
+  border-radius: 27px;
+  width: 120px;
+  height: 32px;
+  font-size: 20px;
+  // padding: 3.6px 11px 4.4px;
+  font-family: SFUIText-Semibold;
+  font-size: 20px;
+  color: #FFFFFF;
+  // text-align: center;
+  line-height: 32px;
+  display: block;
+  padding-left: 12px;
+  background-image: url(../../../../assets/s02/more.png);
+  background-repeat: no-repeat;
+  // background-position: 100px center;
+  background-size: 120px 32px;
+
+}
+
+.left {
+  width: calc(100vw - 100vw*(326/750));
+  // border: 1px solid red;
+  overflow-x: scroll;
+  -webkit-border-radius: 0 0 0.05rem 0.05rem;
+  border-radius: 0 0 0.05rem 0.05rem;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  overflow-y: hidden;
+  padding-bottom: 0.2rem;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    display: none;
+  }
+}
+
+.times {
+  font-family: SFUIText-Regular;
+  font-size: 24px;
+  color: #7A7F85;
+  letter-spacing: 0;
+  position: relative;
+  top: -3px;
+
+}
+
+.firstTitieNoBg {
+  background: none !important;
+}
+
+.firstTitleBgYollow {
+  background-color: #FDD329 !important;
+}
+
+@media screen and (min-width: 992px) {
+  .item {
+    width: 298px;
+
+    >div {
+      &:first-child {
+        width: 172px;
+      }
+    }
+  }
+
+  .itemHandle {
+    width: 278px;
+  }
+
+  .left {
+    width: 424px;
+  }
+}

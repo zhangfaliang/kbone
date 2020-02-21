@@ -1,0 +1,33 @@
+@import '../../../theme/index.less';
+
+.wrapper {
+  height: 240px;
+  padding: @v-p-20 @h-p-20;
+  display: flex;
+  justify-content: space-between;
+  flex:1 0 auto;
+  background: @match-group-bg;
+}
+
+.entrance {
+  width: 346px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.loading {
+  .entrance;
+  overflow: hidden;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}

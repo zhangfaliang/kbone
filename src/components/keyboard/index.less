@@ -1,0 +1,79 @@
+@import '../../theme/index.less';
+.default-keyboard {
+  height: 0;
+  opacity: 0;
+  width: 100%;
+  display: flex;
+  z-index: 9999;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: @aide-color;
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 0.48px;
+  box-sizing: border-box;
+  transition: height  .3s ease-in-out;
+
+  .btnWrap {
+    width: 154px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: @aide-color;
+    &:before {
+      content: '';
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    >span:before{
+      font-size: 40px;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    background: @aide-color;
+  }
+  a,
+  a:hover,
+  a:active,
+  a:visited,
+  a:link,
+  a:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background: none;
+    text-decoration: none;
+  }
+  a:active::before {
+    background: @primary-color;
+  }
+  &.isShow{
+    padding: 20px 80px;
+    height: 390px;
+    padding: 20px 80px;
+    opacity: 1;
+
+  }
+}

@@ -1,0 +1,340 @@
+@import '../../theme/index.less';
+@defaultHeigth: 80px;
+
+.default-label {
+  height: @defaultHeigth;
+  // background: @match-group-bg;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  // color: @aide-color-secondary;
+  
+  // padding-left: @h-p-20;
+  padding: 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  // background: #F4F4F5;
+ >div{
+   &:nth-child(2){
+     span {
+       color: #BCBEC2;
+     }
+   }
+ }
+  &.showTBBorder {
+    // border-bottom: 1px solid @tab-bar-border-color;
+    // border-top: 1px solid @tab-bar-border-color;
+  }
+}
+
+.default-left-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+
+  .gameTypeImg {
+    display: flex;
+    height: 36px;
+    width: 36px;
+    resize-mode: contain;
+    margin-right: 20px;
+  }
+
+  .titleText {
+    font-size: 28px;
+    // color: @aide-color-secondary;
+    width:100%; // 处理订单详情
+  }
+}
+
+.order-scheme-left-title {
+ &:extend(.default-left-title all);
+  .titleText {
+    font-family: Akrobat-Regular;
+    // font-size: 32px;
+    // color: @aide-color-secondary;
+  }
+}
+
+.push-before-left-title {
+  &:extend(.default-left-title all);
+
+  .titleText {
+    font-size: 28px;
+    color: @remark-font-color;
+  }
+
+  height: 72px;
+  box-sizing:border-box;
+  padding-left:@h-p-20;
+}
+
+.live-inplay-left-title {
+  &:extend(.default-left-title all);
+  font-size: 32px;
+  font-family: Akrobat-Bold;
+
+  .liveText {
+    color: #FFE011;
+    margin-right: 10px;
+
+  }
+
+  .inPlayTex {
+    color: #fff
+  }
+
+}
+
+.default-right-table {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0;
+  box-sizing: border-box;
+  // margin-right: 20px;
+  .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    font-size: 28px;
+    color: #8FB8DF;
+
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: @iconHeight;
+    width: @iconWidth;
+
+    >span::before {
+      // color: @aide-color-secondary;
+      color:#BCBEC2; 
+    }
+  }
+}
+
+.index-right-table {
+  &:extend(.default-right-table all);
+
+  span:last-child {
+    margin-right: 20px;
+  }
+}
+
+.push-before-right-table {
+  &:extend(.default-right-table all);
+
+  .table {
+    color: @remark-font-color;
+  }
+
+  padding-right:0;
+
+}
+
+.preCompetition-before-right-table {
+  &:extend(.default-right-table all);
+
+  .table {
+    color: @remark-font-color;
+  }
+
+  padding-right:0;
+
+}
+
+.live-inplay-right-table {
+  &:extend(.default-right-table all);
+
+  .rightText {
+    display: block;
+    height: @tab-bar-height;
+    text-align: center;
+    line-height: @tab-bar-height+1;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+
+  .icon {
+    margin-left: 0px;
+  }
+}
+
+.push-before-label {
+  &:extend(.default-left-title all);
+  font-size: 28px;
+  color: @remark-font-color;
+  height: 72px;
+}
+
+.other-match-label {
+  &:extend(.default-label all);
+  padding-right: 5px;
+  font-size: 28px;
+  color: @remark-font-color;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.bet-detail-label {
+  &:extend(.default-label all);
+  font-family: Akrobat-Regular;
+  font-size: 32px;
+  padding-right: 5px;
+  // background: #FFFFFF;
+  &.showTBBorder {
+    // border-bottom: 1px solid  @bet-border-color;
+    // border-top: 1px solid  @bet-border-color;
+  }
+}
+
+.bet-detail-mt20-label {
+  &:extend(.bet-detail-label all);
+  margin-top:32px;
+  // background: #F5F7FF;
+}
+
+.order-detail-label {
+  &:extend(.bet-detail-label all);
+  height: 72px;
+  font-size: 30px;
+  padding-right: 20px;
+  background: #FFFFFF;
+  border: none;
+  &.showTBBorder {
+    border-bottom: 1px solid  @bet-border-color;
+    border-top: 1px solid  @bet-border-color;
+  }
+}
+
+.default-label-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.match-detail-label {
+  &:extend(.default-label all);
+  padding: 0 13px 0 17px;
+  color: #FFFFFF;
+}
+
+.match-detail-left-title {
+  &:extend(.default-left-title all);
+
+  .titleText {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+
+  flex: none;
+}
+
+.other-match-title-left-title {
+  &:extend(.default-left-title all);
+
+  .titleText {
+    color: #FFFFFF;
+  }
+}
+
+.white-left-title {
+  &:extend(.default-left-title all);
+
+  .titleText {
+    color: #FFFFFF;
+  }
+}
+
+.other-match-item-left-title {
+  &:extend(.default-left-title all);
+
+  .titleText {
+    color: @remark-font-color;
+  }
+}
+
+.bet-detail-left-title {
+  &:extend(.default-left-title all);
+  .titleText {
+    font-family: Akrobat-Regular;
+    // font-size: 32px;
+    font-size: 28px;
+    color: @remark-font-color;
+    color: #7A7F85;
+    margin: 0;
+     text-align: left;
+  }
+}
+.bet-detail-mt20-left-title{
+  &:extend(.bet-detail-left-title all);
+}
+
+.order-detail-left-title {
+  &:extend(.default-left-title all);
+
+  .titleText {
+    color: @remark-font-color;
+  }
+}
+
+.match-detail-right-table {
+  &:extend(.default-right-table all);
+
+  .icon {
+    >span::before {
+      color: #fff;
+    }
+  }
+
+  .activeIcon {
+    >span::before {
+      color: #FFE011;
+    }
+  }
+}
+
+.bet-detail-right-table {
+  &:extend(.default-right-table all);
+
+  .icon {
+    margin: 0;
+
+    >span::before {
+      font-size: 44px;
+    }
+  }
+
+}
+
+.order-detail-right-table {
+  &:extend(.default-right-table all);
+
+  .rightText {
+    color: @remark-font-color;
+  }
+
+}
+.F5F7FF{
+  background: #F5F7FF;
+  border-radius: 24px 24px 0 0;
+}
+.F4F4F5 {
+  background: #F4F4F5;
+  border-radius: 24px 24px 0 0;
+  font-family: SFProText-Regular;
+  font-size: 28px;
+  color: #7A7F85 ;
+  letter-spacing: 0;
+}

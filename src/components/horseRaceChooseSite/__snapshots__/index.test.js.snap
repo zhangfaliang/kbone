@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorseRaceBetButtonCell Back 1`] = `
+<div
+  class="default-back"
+>
+  <span
+    class="iconfont icon-mycopy"
+  />
+</div>
+`;
+
+exports[`HorseRaceBetButtonCell ChooseTitle 1`] = `
+<div
+  class="default-choose-title"
+/>
+`;
+
+exports[`HorseRaceBetButtonCell HorseRaceChooseSite 1`] = `
+<div
+  class="default-choose-site"
+>
+  <div
+    class="default-choose-title"
+  />
+  <div
+    class="default-game-play-module open"
+    style="top:undefinedpx"
+  />
+</div>
+`;
+
+exports[`HorseRaceBetButtonCell HorseRaceSiteList handleSiteItem 1`] = `
+<div
+  class="default-site-block"
+>
+  <span
+    class="site"
+  >
+    dfdsfsdf
+  </span>
+</div>
+`;

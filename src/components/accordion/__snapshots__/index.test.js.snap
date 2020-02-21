@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion base 1`] = `
+<div
+  class="default-accordion"
+/>
+`;
+
+exports[`Accordion base-accordion 1`] = `
+<div
+  class="default-accordion"
+/>
+`;
+
+exports[`Accordion baseMatchDetailPanel 1`] = `
+<div
+  class="default-accordion"
+>
+  <div
+    class="default-detail-panel"
+  >
+    <div
+      class="title"
+    >
+      <div
+        class="titleLife"
+      >
+        <span
+          class="leftText leftTextP12"
+        >
+          Primera división de Liga
+        </span>
+      </div>
+      <div
+        class="titleRight"
+      >
+        <span
+          class="stickIcon"
+        >
+          <span
+            class="iconfont icon-zhiding"
+          />
+        </span>
+        <span
+          class="foldIcon"
+        >
+           
+          <span
+            class="iconfont icon-mycopy"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      class="children"
+    />
+  </div>
+</div>
+`;
+
+exports[`Accordion basePanel 1`] = `
+<div
+  class="default-accordion"
+>
+  <div
+    class="default-panel"
+  >
+    <div
+      class="title"
+    >
+      <span
+        class="text"
+      >
+        Primera división de Liga
+      </span>
+      <span
+        class="iconFont"
+      >
+        <span
+          class="iconfont icon-mycopy2"
+        />
+      </span>
+    </div>
+    <div
+      class="children"
+    />
+  </div>
+</div>
+`;
+
+exports[`MatchDetailPanel accordion-true 1`] = `
+<div
+  class="default-detail-panel show"
+>
+  <div
+    class="title"
+  >
+    <div
+      class="titleLife"
+    >
+      <span
+        class="leftText leftTextP12"
+      >
+        Primera división de Liga
+      </span>
+    </div>
+    <div
+      class="titleRight"
+    >
+      <span
+        class="stickIcon"
+      >
+        <span
+          class="iconfont icon-zhiding"
+        />
+      </span>
+      <span
+        class="foldIcon activeFoldIcon"
+      >
+         
+        <span
+          class="iconfont icon-mycopy"
+        />
+      </span>
+    </div>
+  </div>
+  <div
+    class="children"
+  />
+</div>
+`;
+
+exports[`MatchDetailPanel base 1`] = `
+<div
+  class="default-detail-panel"
+>
+  <div
+    class="title"
+  >
+    <div
+      class="titleLife"
+    >
+      <span
+        class="leftText leftTextP12"
+      >
+        Primera división de Liga
+      </span>
+    </div>
+    <div
+      class="titleRight"
+    >
+      <span
+        class="stickIcon"
+      >
+        <span
+          class="iconfont icon-zhiding"
+        />
+      </span>
+      <span
+        class="foldIcon"
+      >
+         
+        <span
+          class="iconfont icon-mycopy"
+        />
+      </span>
+    </div>
+  </div>
+  <div
+    class="children"
+  />
+</div>
+`;
+
+exports[`Panel base 1`] = `
+<div
+  class="default-panel"
+>
+  <div
+    class="title"
+  >
+    <span
+      class="text"
+    >
+      Primera división de Liga
+    </span>
+    <span
+      class="iconFont"
+    >
+      <span
+        class="iconfont icon-mycopy2"
+      />
+    </span>
+  </div>
+  <div
+    class="children"
+  />
+</div>
+`;
+
+exports[`Panel prefixClsNUll 1`] = `
+<div
+  class="default-panel"
+>
+  <div
+    class="title"
+  >
+    <span
+      class="text"
+    >
+      Primera división de Liga
+    </span>
+    <span
+      class="iconFont"
+    >
+      <span
+        class="iconfont icon-mycopy2"
+      />
+    </span>
+  </div>
+  <div
+    class="children"
+  />
+</div>
+`;
+
+exports[`Panel prefixClsNUll 2`] = `
+<div
+  class="default-panel show"
+>
+  <div
+    class="title"
+  >
+    <span
+      class="text"
+    >
+      Primera división de Liga
+    </span>
+    <span
+      class="iconFont"
+    >
+      <span
+        class="iconfont icon-mycopy2"
+      />
+    </span>
+  </div>
+  <div
+    class="children"
+  />
+</div>
+`;

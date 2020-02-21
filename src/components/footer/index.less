@@ -1,0 +1,169 @@
+@import '../../theme/index.less';
+
+.wrap {
+  flex: 0 0 auto;
+  >div {
+    &:nth-child(1) {
+      text-align: center;
+      font-size: @primary-footer-font-size;
+      color: #FFFFFF;
+      letter-spacing: 0.43px;
+      font-family: Akrobat-Bold;
+      margin-bottom: 36px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-flow: wrap;
+
+    >a {
+      width: 33.33%;
+      text-align: center;
+      font-size: @primary-tab-font-size-secondary;
+      color: #BFBDCA;
+      margin-bottom: 24px;
+      letter-spacing: 0;
+
+      &:nth-child(odd) {
+        text-align: left;
+
+        &:nth-child(3) {
+          text-align: right;
+        }
+
+        &:nth-child(5) {
+          text-align: center;
+        }
+      }
+
+      &:nth-child(even) {
+        &:nth-child(4) {
+          text-align: left;
+        }
+
+        &:nth-child(6) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.loginRenderCls {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  text-align: right;
+  font-family: Akrobat-Regular;
+  font-size: 32px;
+  color: #8FB8DF;
+  letter-spacing: 0.38px;
+  text-align: right;
+
+  span {
+    font-family: Akrobat-SemiBold;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0.34px;
+    text-align: right;
+  }
+}
+
+.title {
+  background-image: url('@/assets/logo@3x.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 95px;
+  background-size: 100%;
+  margin: auto;
+  background-position: center;
+}
+
+:global {
+  .wrapModal {
+    touch-action: none; // 解决chrome 点击报错问题
+    .am-modal{
+      width: 100%;
+      margin: 0 20px;
+    }
+    .am-modal-close {
+      right: 20px;
+      top: 20px;
+      height: 30px;
+      width: 30px;
+      .am-modal-close-x{
+        height: 20px;
+        width: 20px;
+        background-image:url('../../assets/close@3x.png')
+      }
+    }
+
+    .am-modal-content {
+      padding: 0 !important;
+      background-color: transparent !important;
+    }
+
+    .am-modal-header {
+      padding: 0 20px !important;
+      // border-bottom: 1px solid #DBDEE5;
+      background-color: #fff;
+
+      .am-modal-title {
+        font-family: Akrobat-Regular !important;
+        font-size: 30px !important;
+        color: #214365 !important;
+        line-height: 72px !important;
+        height: 72px
+      }
+    }
+
+    .am-modal-body {
+      padding: 0 !important;
+      font-size: 32px !important;
+      color: #080F1E !important;
+      >div{
+        >div{
+          >div{
+            >div{
+              >div{
+                padding: 0 20px 0 0;
+                background-color: #F6F8FF;
+                border-top-color: #DBDEE5;
+                border-top-style: solid;
+                border-top-width: 1px;
+                border-bottom: 0;
+                &:last-child{
+                  border-top-color: #DBDEE5;
+                  border-top-style: solid;
+                  border-top-width: 1px;
+                  border-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .item {
+      height: 100px;
+    }
+    .am-modal-button{
+      background-color: #00A7FE !important;
+    }
+  }
+}
+.languageStyle {
+  font-size: 24px;
+  color:#bfbdca
+}
+
+.loginHeader{
+  display: flex;
+  align-items: center;
+  img{
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,109 @@
+@import '../../theme/index.less';
+@width: 428px;
+@height: 80px;
+.wrap{
+  z-index: @zindex-addToScreen;
+  position: fixed;
+  right: 50%;
+  bottom: 0;
+  cursor: pointer;
+}
+.content, .icon {
+  position: relative;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: @zindex-addToScreen;
+  height: @height;
+  min-width: @width;
+  line-height: @height;
+  padding: 18px;
+  border-radius: @base-border-radius;
+  border-bottom-left-radius: @base-border-radius;
+  border-top-left-radius: @base-border-radius;
+  background-color: @primary-color;
+  font-family: Akrobat-Bold;
+  font-size: 32px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  transition: all .3s @ease-in-out;
+  overflow: hidden;
+  transform: translateX(50%);
+  background-image: linear-gradient(135deg, #00BAD3 0%, #007595 100%);
+}
+
+.icon {
+  left: 50%;
+  z-index: @zindex-addToScreen - 1;
+  transform: translate(0, -75%) rotate(45deg);
+  margin: 0 auto;
+  width: @iconWidth;
+  height: @iconHeight;
+  background-color: #0092af;
+}
+
+.close {
+  width: @iconWidth;
+  height: @iconHeight;
+  line-height: @iconHeight;
+}
+
+.add {
+  .close;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap;
+  padding: 0 18px;
+}
+
+.modal {
+  width: auto !important;
+  height: auto;
+  a {
+    background: @primary-secondary-color !important;
+  }
+}
+.helperImg {
+  width: 710px;
+  height: 608px;
+  margin: -20px;
+}
+
+.modalIosNotSafari, .modalclosing {
+  text-align: center;
+  > img {
+    width: 140px;
+    height: 140px;
+    margin: 41px auto 34px;
+  }
+  > p {
+    width: 446px;
+    height: 90px;
+    margin: auto auto 7px auto;
+    font-size: 32px;
+    color: @primary-font-color;
+  }
+}
+.modalclosing {
+  > p {
+    width: 670px;
+    margin: 0;
+  }
+}
+.ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+  > li:first-child {
+    margin-bottom: 25px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
